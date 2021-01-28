@@ -5,15 +5,15 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import User from '../models/User.ts';
+import Vue from "vue";
+import User from "../models/User.ts";
 
 export default Vue.extend({
-  name: 'Header',
+  name: "Header",
 
   data() {
     return {
-      title: 'My Header File',
+      title: "My Header File",
       user: {} as User,
     };
   },

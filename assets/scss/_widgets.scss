@@ -12,52 +12,51 @@
   }
 }
 
-
 /* Activity */
 
 .activity-feed {
   list-style: none;
   .feed-item {
-      position: relative;
-      padding-bottom: 30px;
-      padding-left: 30px;
-      border-left: 2px solid $light;
-      &:after {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        left: -11px;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        border: 6px solid $primary;
-        background-color: $white;
-      }
-      &:last-child {
-        border-color: transparent;
-      }
+    position: relative;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    border-left: 2px solid $light;
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -11px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 6px solid $primary;
+      background-color: $white;
+    }
+    &:last-child {
+      border-color: transparent;
+    }
   }
 }
-
 
 // tab widgets
 
 // tab-widget
 
-.tab-wid{
+.tab-wid {
   position: relative;
-  .nav-link{
+  .nav-link {
     padding-bottom: 24px;
     position: relative;
-    &:hover, &:focus{
-      border-color: transparent;
-      background: transparent; 
-    }
-    &.active{
+    &:hover,
+    &:focus {
       border-color: transparent;
       background: transparent;
-      &::before{
+    }
+    &.active {
+      border-color: transparent;
+      background: transparent;
+      &::before {
         content: "";
         position: absolute;
         width: 14px;
@@ -71,29 +70,28 @@
         background: $white;
         margin: 0px auto;
       }
-      .date, .product-icon{
+      .date,
+      .product-icon {
         color: $primary;
       }
     }
   }
 }
 
-
-.latest-message-list{
-  .message-list-item{
+.latest-message-list {
+  .message-list-item {
     position: relative;
-        a{
-          display: block;
-          padding: 14px 0px;
-          border-bottom: 1px solid $gray-200;
-          color: $gray-600;
-        }
+    a {
+      display: block;
+      padding: 14px 0px;
+      border-bottom: 1px solid $gray-200;
+      color: $gray-600;
+    }
 
-    &:last-child{
-      a{
+    &:last-child {
+      a {
         border: none;
       }
     }
   }
 }
-

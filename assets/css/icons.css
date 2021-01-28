@@ -26,15 +26,15 @@ Template Name: Zegva - Responsive Bootstrap 4 Admin Dashboard
 .fa-lg {
   font-size: 1.33333em;
   line-height: 0.75em;
-  vertical-align: -.0667em;
+  vertical-align: -0.0667em;
 }
 
 .fa-xs {
-  font-size: .75em;
+  font-size: 0.75em;
 }
 
 .fa-sm {
-  font-size: .875em;
+  font-size: 0.875em;
 }
 
 .fa-1x {
@@ -102,8 +102,8 @@ Template Name: Zegva - Responsive Bootstrap 4 Admin Dashboard
 
 .fa-border {
   border: solid 0.08em #eee;
-  border-radius: .1em;
-  padding: .2em .25em .15em;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
 }
 
 .fa-pull-left {
@@ -119,7 +119,7 @@ Template Name: Zegva - Responsive Bootstrap 4 Admin Dashboard
 .far.fa-pull-left,
 .fal.fa-pull-left,
 .fab.fa-pull-left {
-  margin-right: .3em;
+  margin-right: 0.3em;
 }
 
 .fa.fa-pull-right,
@@ -127,7 +127,7 @@ Template Name: Zegva - Responsive Bootstrap 4 Admin Dashboard
 .far.fa-pull-right,
 .fal.fa-pull-right,
 .fab.fa-pull-right {
-  margin-left: .3em;
+  margin-left: 0.3em;
 }
 
 .fa-spin {
@@ -5565,7 +5565,8 @@ readers do not read off random characters that represent icons */
   width: 1px;
 }
 
-.sr-only-focusable:active, .sr-only-focusable:focus {
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
@@ -5575,41 +5576,53 @@ readers do not read off random characters that represent icons */
 }
 
 @font-face {
-  font-family: 'Font Awesome 5 Brands';
+  font-family: "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   src: url("../fonts/fa-brands-400.eot");
-  src: url("../fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-brands-400.woff2") format("woff2"), url("../fonts/fa-brands-400.woff") format("woff"), url("../fonts/fa-brands-400.ttf") format("truetype"), url("../fonts/fa-brands-400.svg#fontawesome") format("svg");
+  src: url("../fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/fa-brands-400.woff2") format("woff2"),
+    url("../fonts/fa-brands-400.woff") format("woff"),
+    url("../fonts/fa-brands-400.ttf") format("truetype"),
+    url("../fonts/fa-brands-400.svg#fontawesome") format("svg");
 }
 
 .fab {
-  font-family: 'Font Awesome 5 Brands';
+  font-family: "Font Awesome 5 Brands";
 }
 
 @font-face {
-  font-family: 'Font Awesome 5 Free';
+  font-family: "Font Awesome 5 Free";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/fa-regular-400.eot");
-  src: url("../fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-regular-400.woff2") format("woff2"), url("../fonts/fa-regular-400.woff") format("woff"), url("../fonts/fa-regular-400.ttf") format("truetype"), url("../fonts/fa-regular-400.svg#fontawesome") format("svg");
+  src: url("../fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/fa-regular-400.woff2") format("woff2"),
+    url("../fonts/fa-regular-400.woff") format("woff"),
+    url("../fonts/fa-regular-400.ttf") format("truetype"),
+    url("../fonts/fa-regular-400.svg#fontawesome") format("svg");
 }
 
 .far {
-  font-family: 'Font Awesome 5 Free';
+  font-family: "Font Awesome 5 Free";
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'Font Awesome 5 Free';
+  font-family: "Font Awesome 5 Free";
   font-style: normal;
   font-weight: 900;
   src: url("../fonts/fa-solid-900.eot");
-  src: url("../fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-solid-900.woff2") format("woff2"), url("../fonts/fa-solid-900.woff") format("woff"), url("../fonts/fa-solid-900.ttf") format("truetype"), url("../fonts/fa-solid-900.svg#fontawesome") format("svg");
+  src: url("../fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/fa-solid-900.woff2") format("woff2"),
+    url("../fonts/fa-solid-900.woff") format("woff"),
+    url("../fonts/fa-solid-900.ttf") format("truetype"),
+    url("../fonts/fa-solid-900.svg#fontawesome") format("svg");
 }
 
 .fa,
 .fas {
-  font-family: 'Font Awesome 5 Free';
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
 
@@ -5617,7 +5630,13 @@ readers do not read off random characters that represent icons */
 @font-face {
   font-family: "Material Design Icons";
   src: url("../fonts/materialdesignicons-webfont.eot?v=3.6.95");
-  src: url("../fonts/materialdesignicons-webfont.eot?#iefix&v=3.6.95") format("embedded-opentype"), url("../fonts/materialdesignicons-webfont.woff2?v=3.6.95") format("woff2"), url("../fonts/materialdesignicons-webfont.woff?v=3.6.95") format("woff"), url("../fonts/materialdesignicons-webfont.ttf?v=3.6.95") format("truetype"), url("../fonts/materialdesignicons-webfont.svg?v=3.6.95#materialdesigniconsregular") format("svg");
+  src: url("../fonts/materialdesignicons-webfont.eot?#iefix&v=3.6.95")
+      format("embedded-opentype"),
+    url("../fonts/materialdesignicons-webfont.woff2?v=3.6.95") format("woff2"),
+    url("../fonts/materialdesignicons-webfont.woff?v=3.6.95") format("woff"),
+    url("../fonts/materialdesignicons-webfont.ttf?v=3.6.95") format("truetype"),
+    url("../fonts/materialdesignicons-webfont.svg?v=3.6.95#materialdesigniconsregular")
+      format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -20418,19 +20437,23 @@ readers do not read off random characters that represent icons */
   visibility: hidden;
 }
 
-.mdi-18px.mdi-set, .mdi-18px.mdi:before {
+.mdi-18px.mdi-set,
+.mdi-18px.mdi:before {
   font-size: 18px;
 }
 
-.mdi-24px.mdi-set, .mdi-24px.mdi:before {
+.mdi-24px.mdi-set,
+.mdi-24px.mdi:before {
   font-size: 24px;
 }
 
-.mdi-36px.mdi-set, .mdi-36px.mdi:before {
+.mdi-36px.mdi-set,
+.mdi-36px.mdi:before {
   font-size: 36px;
 }
 
-.mdi-48px.mdi-set, .mdi-48px.mdi:before {
+.mdi-48px.mdi-set,
+.mdi-48px.mdi:before {
   font-size: 48px;
 }
 
@@ -20622,7 +20645,7 @@ readers do not read off random characters that represent icons */
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   -webkit-filter: FlipH;
-          filter: FlipH;
+  filter: FlipH;
   -ms-filter: "FlipH";
 }
 
@@ -20630,7 +20653,7 @@ readers do not read off random characters that represent icons */
   -webkit-transform: scaleY(-1);
   transform: scaleY(-1);
   -webkit-filter: FlipV;
-          filter: FlipV;
+  filter: FlipV;
   -ms-filter: "FlipV";
 }
 
@@ -20674,12 +20697,713 @@ readers do not read off random characters that represent icons */
 @font-face {
   font-family: "Ionicons";
   src: url("../fonts/ionicons.eot?v=4.1.1");
-  src: url("../fonts/ionicons.eot?v=4.1.1#iefix") format("embedded-opentype"), url("../fonts/ionicons.woff2?v=4.1.1") format("woff2"), url("../fonts/ionicons.woff?v=4.1.1") format("woff"), url("../fonts/ionicons.ttf?v=4.1.1") format("truetype"), url("../fonts/ionicons.svg?v=4.1.1#Ionicons") format("svg");
+  src: url("../fonts/ionicons.eot?v=4.1.1#iefix") format("embedded-opentype"),
+    url("../fonts/ionicons.woff2?v=4.1.1") format("woff2"),
+    url("../fonts/ionicons.woff?v=4.1.1") format("woff"),
+    url("../fonts/ionicons.ttf?v=4.1.1") format("truetype"),
+    url("../fonts/ionicons.svg?v=4.1.1#Ionicons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
-.ion, .ionicons, .ion-ios-add:before, .ion-ios-add-circle:before, .ion-ios-add-circle-outline:before, .ion-ios-airplane:before, .ion-ios-alarm:before, .ion-ios-albums:before, .ion-ios-alert:before, .ion-ios-american-football:before, .ion-ios-analytics:before, .ion-ios-aperture:before, .ion-ios-apps:before, .ion-ios-appstore:before, .ion-ios-archive:before, .ion-ios-arrow-back:before, .ion-ios-arrow-down:before, .ion-ios-arrow-dropdown:before, .ion-ios-arrow-dropdown-circle:before, .ion-ios-arrow-dropleft:before, .ion-ios-arrow-dropleft-circle:before, .ion-ios-arrow-dropright:before, .ion-ios-arrow-dropright-circle:before, .ion-ios-arrow-dropup:before, .ion-ios-arrow-dropup-circle:before, .ion-ios-arrow-forward:before, .ion-ios-arrow-round-back:before, .ion-ios-arrow-round-down:before, .ion-ios-arrow-round-forward:before, .ion-ios-arrow-round-up:before, .ion-ios-arrow-up:before, .ion-ios-at:before, .ion-ios-attach:before, .ion-ios-backspace:before, .ion-ios-barcode:before, .ion-ios-baseball:before, .ion-ios-basket:before, .ion-ios-basketball:before, .ion-ios-battery-charging:before, .ion-ios-battery-dead:before, .ion-ios-battery-full:before, .ion-ios-beaker:before, .ion-ios-bed:before, .ion-ios-beer:before, .ion-ios-bicycle:before, .ion-ios-bluetooth:before, .ion-ios-boat:before, .ion-ios-body:before, .ion-ios-bonfire:before, .ion-ios-book:before, .ion-ios-bookmark:before, .ion-ios-bookmarks:before, .ion-ios-bowtie:before, .ion-ios-briefcase:before, .ion-ios-browsers:before, .ion-ios-brush:before, .ion-ios-bug:before, .ion-ios-build:before, .ion-ios-bulb:before, .ion-ios-bus:before, .ion-ios-business:before, .ion-ios-cafe:before, .ion-ios-calculator:before, .ion-ios-calendar:before, .ion-ios-call:before, .ion-ios-camera:before, .ion-ios-car:before, .ion-ios-card:before, .ion-ios-cart:before, .ion-ios-cash:before, .ion-ios-cellular:before, .ion-ios-chatboxes:before, .ion-ios-chatbubbles:before, .ion-ios-checkbox:before, .ion-ios-checkbox-outline:before, .ion-ios-checkmark:before, .ion-ios-checkmark-circle:before, .ion-ios-checkmark-circle-outline:before, .ion-ios-clipboard:before, .ion-ios-clock:before, .ion-ios-close:before, .ion-ios-close-circle:before, .ion-ios-close-circle-outline:before, .ion-ios-cloud:before, .ion-ios-cloud-circle:before, .ion-ios-cloud-done:before, .ion-ios-cloud-download:before, .ion-ios-cloud-outline:before, .ion-ios-cloud-upload:before, .ion-ios-cloudy:before, .ion-ios-cloudy-night:before, .ion-ios-code:before, .ion-ios-code-download:before, .ion-ios-code-working:before, .ion-ios-cog:before, .ion-ios-color-fill:before, .ion-ios-color-filter:before, .ion-ios-color-palette:before, .ion-ios-color-wand:before, .ion-ios-compass:before, .ion-ios-construct:before, .ion-ios-contact:before, .ion-ios-contacts:before, .ion-ios-contract:before, .ion-ios-contrast:before, .ion-ios-copy:before, .ion-ios-create:before, .ion-ios-crop:before, .ion-ios-cube:before, .ion-ios-cut:before, .ion-ios-desktop:before, .ion-ios-disc:before, .ion-ios-document:before, .ion-ios-done-all:before, .ion-ios-download:before, .ion-ios-easel:before, .ion-ios-egg:before, .ion-ios-exit:before, .ion-ios-expand:before, .ion-ios-eye:before, .ion-ios-eye-off:before, .ion-ios-fastforward:before, .ion-ios-female:before, .ion-ios-filing:before, .ion-ios-film:before, .ion-ios-finger-print:before, .ion-ios-fitness:before, .ion-ios-flag:before, .ion-ios-flame:before, .ion-ios-flash:before, .ion-ios-flash-off:before, .ion-ios-flashlight:before, .ion-ios-flask:before, .ion-ios-flower:before, .ion-ios-folder:before, .ion-ios-folder-open:before, .ion-ios-football:before, .ion-ios-funnel:before, .ion-ios-gift:before, .ion-ios-git-branch:before, .ion-ios-git-commit:before, .ion-ios-git-compare:before, .ion-ios-git-merge:before, .ion-ios-git-network:before, .ion-ios-git-pull-request:before, .ion-ios-glasses:before, .ion-ios-globe:before, .ion-ios-grid:before, .ion-ios-hammer:before, .ion-ios-hand:before, .ion-ios-happy:before, .ion-ios-headset:before, .ion-ios-heart:before, .ion-ios-heart-dislike:before, .ion-ios-heart-empty:before, .ion-ios-heart-half:before, .ion-ios-help:before, .ion-ios-help-buoy:before, .ion-ios-help-circle:before, .ion-ios-help-circle-outline:before, .ion-ios-home:before, .ion-ios-hourglass:before, .ion-ios-ice-cream:before, .ion-ios-image:before, .ion-ios-images:before, .ion-ios-infinite:before, .ion-ios-information:before, .ion-ios-information-circle:before, .ion-ios-information-circle-outline:before, .ion-ios-jet:before, .ion-ios-journal:before, .ion-ios-key:before, .ion-ios-keypad:before, .ion-ios-laptop:before, .ion-ios-leaf:before, .ion-ios-link:before, .ion-ios-list:before, .ion-ios-list-box:before, .ion-ios-locate:before, .ion-ios-lock:before, .ion-ios-log-in:before, .ion-ios-log-out:before, .ion-ios-magnet:before, .ion-ios-mail:before, .ion-ios-mail-open:before, .ion-ios-mail-unread:before, .ion-ios-male:before, .ion-ios-man:before, .ion-ios-map:before, .ion-ios-medal:before, .ion-ios-medical:before, .ion-ios-medkit:before, .ion-ios-megaphone:before, .ion-ios-menu:before, .ion-ios-mic:before, .ion-ios-mic-off:before, .ion-ios-microphone:before, .ion-ios-moon:before, .ion-ios-more:before, .ion-ios-move:before, .ion-ios-musical-note:before, .ion-ios-musical-notes:before, .ion-ios-navigate:before, .ion-ios-notifications:before, .ion-ios-notifications-off:before, .ion-ios-notifications-outline:before, .ion-ios-nuclear:before, .ion-ios-nutrition:before, .ion-ios-open:before, .ion-ios-options:before, .ion-ios-outlet:before, .ion-ios-paper:before, .ion-ios-paper-plane:before, .ion-ios-partly-sunny:before, .ion-ios-pause:before, .ion-ios-paw:before, .ion-ios-people:before, .ion-ios-person:before, .ion-ios-person-add:before, .ion-ios-phone-landscape:before, .ion-ios-phone-portrait:before, .ion-ios-photos:before, .ion-ios-pie:before, .ion-ios-pin:before, .ion-ios-pint:before, .ion-ios-pizza:before, .ion-ios-planet:before, .ion-ios-play:before, .ion-ios-play-circle:before, .ion-ios-podium:before, .ion-ios-power:before, .ion-ios-pricetag:before, .ion-ios-pricetags:before, .ion-ios-print:before, .ion-ios-pulse:before, .ion-ios-qr-scanner:before, .ion-ios-quote:before, .ion-ios-radio:before, .ion-ios-radio-button-off:before, .ion-ios-radio-button-on:before, .ion-ios-rainy:before, .ion-ios-recording:before, .ion-ios-redo:before, .ion-ios-refresh:before, .ion-ios-refresh-circle:before, .ion-ios-remove:before, .ion-ios-remove-circle:before, .ion-ios-remove-circle-outline:before, .ion-ios-reorder:before, .ion-ios-repeat:before, .ion-ios-resize:before, .ion-ios-restaurant:before, .ion-ios-return-left:before, .ion-ios-return-right:before, .ion-ios-reverse-camera:before, .ion-ios-rewind:before, .ion-ios-ribbon:before, .ion-ios-rocket:before, .ion-ios-rose:before, .ion-ios-sad:before, .ion-ios-save:before, .ion-ios-school:before, .ion-ios-search:before, .ion-ios-send:before, .ion-ios-settings:before, .ion-ios-share:before, .ion-ios-share-alt:before, .ion-ios-shirt:before, .ion-ios-shuffle:before, .ion-ios-skip-backward:before, .ion-ios-skip-forward:before, .ion-ios-snow:before, .ion-ios-speedometer:before, .ion-ios-square:before, .ion-ios-square-outline:before, .ion-ios-star:before, .ion-ios-star-half:before, .ion-ios-star-outline:before, .ion-ios-stats:before, .ion-ios-stopwatch:before, .ion-ios-subway:before, .ion-ios-sunny:before, .ion-ios-swap:before, .ion-ios-switch:before, .ion-ios-sync:before, .ion-ios-tablet-landscape:before, .ion-ios-tablet-portrait:before, .ion-ios-tennisball:before, .ion-ios-text:before, .ion-ios-thermometer:before, .ion-ios-thumbs-down:before, .ion-ios-thumbs-up:before, .ion-ios-thunderstorm:before, .ion-ios-time:before, .ion-ios-timer:before, .ion-ios-today:before, .ion-ios-train:before, .ion-ios-transgender:before, .ion-ios-trash:before, .ion-ios-trending-down:before, .ion-ios-trending-up:before, .ion-ios-trophy:before, .ion-ios-tv:before, .ion-ios-umbrella:before, .ion-ios-undo:before, .ion-ios-unlock:before, .ion-ios-videocam:before, .ion-ios-volume-high:before, .ion-ios-volume-low:before, .ion-ios-volume-mute:before, .ion-ios-volume-off:before, .ion-ios-walk:before, .ion-ios-wallet:before, .ion-ios-warning:before, .ion-ios-watch:before, .ion-ios-water:before, .ion-ios-wifi:before, .ion-ios-wine:before, .ion-ios-woman:before, .ion-logo-android:before, .ion-logo-angular:before, .ion-logo-apple:before, .ion-logo-bitbucket:before, .ion-logo-bitcoin:before, .ion-logo-buffer:before, .ion-logo-chrome:before, .ion-logo-closed-captioning:before, .ion-logo-codepen:before, .ion-logo-css3:before, .ion-logo-designernews:before, .ion-logo-dribbble:before, .ion-logo-dropbox:before, .ion-logo-euro:before, .ion-logo-facebook:before, .ion-logo-flickr:before, .ion-logo-foursquare:before, .ion-logo-freebsd-devil:before, .ion-logo-game-controller-a:before, .ion-logo-game-controller-b:before, .ion-logo-github:before, .ion-logo-google:before, .ion-logo-googleplus:before, .ion-logo-hackernews:before, .ion-logo-html5:before, .ion-logo-instagram:before, .ion-logo-ionic:before, .ion-logo-ionitron:before, .ion-logo-javascript:before, .ion-logo-linkedin:before, .ion-logo-markdown:before, .ion-logo-model-s:before, .ion-logo-no-smoking:before, .ion-logo-nodejs:before, .ion-logo-npm:before, .ion-logo-octocat:before, .ion-logo-pinterest:before, .ion-logo-playstation:before, .ion-logo-polymer:before, .ion-logo-python:before, .ion-logo-reddit:before, .ion-logo-rss:before, .ion-logo-sass:before, .ion-logo-skype:before, .ion-logo-slack:before, .ion-logo-snapchat:before, .ion-logo-steam:before, .ion-logo-tumblr:before, .ion-logo-tux:before, .ion-logo-twitch:before, .ion-logo-twitter:before, .ion-logo-usd:before, .ion-logo-vimeo:before, .ion-logo-vk:before, .ion-logo-whatsapp:before, .ion-logo-windows:before, .ion-logo-wordpress:before, .ion-logo-xbox:before, .ion-logo-xing:before, .ion-logo-yahoo:before, .ion-logo-yen:before, .ion-logo-youtube:before, .ion-md-add:before, .ion-md-add-circle:before, .ion-md-add-circle-outline:before, .ion-md-airplane:before, .ion-md-alarm:before, .ion-md-albums:before, .ion-md-alert:before, .ion-md-american-football:before, .ion-md-analytics:before, .ion-md-aperture:before, .ion-md-apps:before, .ion-md-appstore:before, .ion-md-archive:before, .ion-md-arrow-back:before, .ion-md-arrow-down:before, .ion-md-arrow-dropdown:before, .ion-md-arrow-dropdown-circle:before, .ion-md-arrow-dropleft:before, .ion-md-arrow-dropleft-circle:before, .ion-md-arrow-dropright:before, .ion-md-arrow-dropright-circle:before, .ion-md-arrow-dropup:before, .ion-md-arrow-dropup-circle:before, .ion-md-arrow-forward:before, .ion-md-arrow-round-back:before, .ion-md-arrow-round-down:before, .ion-md-arrow-round-forward:before, .ion-md-arrow-round-up:before, .ion-md-arrow-up:before, .ion-md-at:before, .ion-md-attach:before, .ion-md-backspace:before, .ion-md-barcode:before, .ion-md-baseball:before, .ion-md-basket:before, .ion-md-basketball:before, .ion-md-battery-charging:before, .ion-md-battery-dead:before, .ion-md-battery-full:before, .ion-md-beaker:before, .ion-md-bed:before, .ion-md-beer:before, .ion-md-bicycle:before, .ion-md-bluetooth:before, .ion-md-boat:before, .ion-md-body:before, .ion-md-bonfire:before, .ion-md-book:before, .ion-md-bookmark:before, .ion-md-bookmarks:before, .ion-md-bowtie:before, .ion-md-briefcase:before, .ion-md-browsers:before, .ion-md-brush:before, .ion-md-bug:before, .ion-md-build:before, .ion-md-bulb:before, .ion-md-bus:before, .ion-md-business:before, .ion-md-cafe:before, .ion-md-calculator:before, .ion-md-calendar:before, .ion-md-call:before, .ion-md-camera:before, .ion-md-car:before, .ion-md-card:before, .ion-md-cart:before, .ion-md-cash:before, .ion-md-cellular:before, .ion-md-chatboxes:before, .ion-md-chatbubbles:before, .ion-md-checkbox:before, .ion-md-checkbox-outline:before, .ion-md-checkmark:before, .ion-md-checkmark-circle:before, .ion-md-checkmark-circle-outline:before, .ion-md-clipboard:before, .ion-md-clock:before, .ion-md-close:before, .ion-md-close-circle:before, .ion-md-close-circle-outline:before, .ion-md-cloud:before, .ion-md-cloud-circle:before, .ion-md-cloud-done:before, .ion-md-cloud-download:before, .ion-md-cloud-outline:before, .ion-md-cloud-upload:before, .ion-md-cloudy:before, .ion-md-cloudy-night:before, .ion-md-code:before, .ion-md-code-download:before, .ion-md-code-working:before, .ion-md-cog:before, .ion-md-color-fill:before, .ion-md-color-filter:before, .ion-md-color-palette:before, .ion-md-color-wand:before, .ion-md-compass:before, .ion-md-construct:before, .ion-md-contact:before, .ion-md-contacts:before, .ion-md-contract:before, .ion-md-contrast:before, .ion-md-copy:before, .ion-md-create:before, .ion-md-crop:before, .ion-md-cube:before, .ion-md-cut:before, .ion-md-desktop:before, .ion-md-disc:before, .ion-md-document:before, .ion-md-done-all:before, .ion-md-download:before, .ion-md-easel:before, .ion-md-egg:before, .ion-md-exit:before, .ion-md-expand:before, .ion-md-eye:before, .ion-md-eye-off:before, .ion-md-fastforward:before, .ion-md-female:before, .ion-md-filing:before, .ion-md-film:before, .ion-md-finger-print:before, .ion-md-fitness:before, .ion-md-flag:before, .ion-md-flame:before, .ion-md-flash:before, .ion-md-flash-off:before, .ion-md-flashlight:before, .ion-md-flask:before, .ion-md-flower:before, .ion-md-folder:before, .ion-md-folder-open:before, .ion-md-football:before, .ion-md-funnel:before, .ion-md-gift:before, .ion-md-git-branch:before, .ion-md-git-commit:before, .ion-md-git-compare:before, .ion-md-git-merge:before, .ion-md-git-network:before, .ion-md-git-pull-request:before, .ion-md-glasses:before, .ion-md-globe:before, .ion-md-grid:before, .ion-md-hammer:before, .ion-md-hand:before, .ion-md-happy:before, .ion-md-headset:before, .ion-md-heart:before, .ion-md-heart-dislike:before, .ion-md-heart-empty:before, .ion-md-heart-half:before, .ion-md-help:before, .ion-md-help-buoy:before, .ion-md-help-circle:before, .ion-md-help-circle-outline:before, .ion-md-home:before, .ion-md-hourglass:before, .ion-md-ice-cream:before, .ion-md-image:before, .ion-md-images:before, .ion-md-infinite:before, .ion-md-information:before, .ion-md-information-circle:before, .ion-md-information-circle-outline:before, .ion-md-jet:before, .ion-md-journal:before, .ion-md-key:before, .ion-md-keypad:before, .ion-md-laptop:before, .ion-md-leaf:before, .ion-md-link:before, .ion-md-list:before, .ion-md-list-box:before, .ion-md-locate:before, .ion-md-lock:before, .ion-md-log-in:before, .ion-md-log-out:before, .ion-md-magnet:before, .ion-md-mail:before, .ion-md-mail-open:before, .ion-md-mail-unread:before, .ion-md-male:before, .ion-md-man:before, .ion-md-map:before, .ion-md-medal:before, .ion-md-medical:before, .ion-md-medkit:before, .ion-md-megaphone:before, .ion-md-menu:before, .ion-md-mic:before, .ion-md-mic-off:before, .ion-md-microphone:before, .ion-md-moon:before, .ion-md-more:before, .ion-md-move:before, .ion-md-musical-note:before, .ion-md-musical-notes:before, .ion-md-navigate:before, .ion-md-notifications:before, .ion-md-notifications-off:before, .ion-md-notifications-outline:before, .ion-md-nuclear:before, .ion-md-nutrition:before, .ion-md-open:before, .ion-md-options:before, .ion-md-outlet:before, .ion-md-paper:before, .ion-md-paper-plane:before, .ion-md-partly-sunny:before, .ion-md-pause:before, .ion-md-paw:before, .ion-md-people:before, .ion-md-person:before, .ion-md-person-add:before, .ion-md-phone-landscape:before, .ion-md-phone-portrait:before, .ion-md-photos:before, .ion-md-pie:before, .ion-md-pin:before, .ion-md-pint:before, .ion-md-pizza:before, .ion-md-planet:before, .ion-md-play:before, .ion-md-play-circle:before, .ion-md-podium:before, .ion-md-power:before, .ion-md-pricetag:before, .ion-md-pricetags:before, .ion-md-print:before, .ion-md-pulse:before, .ion-md-qr-scanner:before, .ion-md-quote:before, .ion-md-radio:before, .ion-md-radio-button-off:before, .ion-md-radio-button-on:before, .ion-md-rainy:before, .ion-md-recording:before, .ion-md-redo:before, .ion-md-refresh:before, .ion-md-refresh-circle:before, .ion-md-remove:before, .ion-md-remove-circle:before, .ion-md-remove-circle-outline:before, .ion-md-reorder:before, .ion-md-repeat:before, .ion-md-resize:before, .ion-md-restaurant:before, .ion-md-return-left:before, .ion-md-return-right:before, .ion-md-reverse-camera:before, .ion-md-rewind:before, .ion-md-ribbon:before, .ion-md-rocket:before, .ion-md-rose:before, .ion-md-sad:before, .ion-md-save:before, .ion-md-school:before, .ion-md-search:before, .ion-md-send:before, .ion-md-settings:before, .ion-md-share:before, .ion-md-share-alt:before, .ion-md-shirt:before, .ion-md-shuffle:before, .ion-md-skip-backward:before, .ion-md-skip-forward:before, .ion-md-snow:before, .ion-md-speedometer:before, .ion-md-square:before, .ion-md-square-outline:before, .ion-md-star:before, .ion-md-star-half:before, .ion-md-star-outline:before, .ion-md-stats:before, .ion-md-stopwatch:before, .ion-md-subway:before, .ion-md-sunny:before, .ion-md-swap:before, .ion-md-switch:before, .ion-md-sync:before, .ion-md-tablet-landscape:before, .ion-md-tablet-portrait:before, .ion-md-tennisball:before, .ion-md-text:before, .ion-md-thermometer:before, .ion-md-thumbs-down:before, .ion-md-thumbs-up:before, .ion-md-thunderstorm:before, .ion-md-time:before, .ion-md-timer:before, .ion-md-today:before, .ion-md-train:before, .ion-md-transgender:before, .ion-md-trash:before, .ion-md-trending-down:before, .ion-md-trending-up:before, .ion-md-trophy:before, .ion-md-tv:before, .ion-md-umbrella:before, .ion-md-undo:before, .ion-md-unlock:before, .ion-md-videocam:before, .ion-md-volume-high:before, .ion-md-volume-low:before, .ion-md-volume-mute:before, .ion-md-volume-off:before, .ion-md-walk:before, .ion-md-wallet:before, .ion-md-warning:before, .ion-md-watch:before, .ion-md-water:before, .ion-md-wifi:before, .ion-md-wine:before, .ion-md-woman:before {
+.ion,
+.ionicons,
+.ion-ios-add:before,
+.ion-ios-add-circle:before,
+.ion-ios-add-circle-outline:before,
+.ion-ios-airplane:before,
+.ion-ios-alarm:before,
+.ion-ios-albums:before,
+.ion-ios-alert:before,
+.ion-ios-american-football:before,
+.ion-ios-analytics:before,
+.ion-ios-aperture:before,
+.ion-ios-apps:before,
+.ion-ios-appstore:before,
+.ion-ios-archive:before,
+.ion-ios-arrow-back:before,
+.ion-ios-arrow-down:before,
+.ion-ios-arrow-dropdown:before,
+.ion-ios-arrow-dropdown-circle:before,
+.ion-ios-arrow-dropleft:before,
+.ion-ios-arrow-dropleft-circle:before,
+.ion-ios-arrow-dropright:before,
+.ion-ios-arrow-dropright-circle:before,
+.ion-ios-arrow-dropup:before,
+.ion-ios-arrow-dropup-circle:before,
+.ion-ios-arrow-forward:before,
+.ion-ios-arrow-round-back:before,
+.ion-ios-arrow-round-down:before,
+.ion-ios-arrow-round-forward:before,
+.ion-ios-arrow-round-up:before,
+.ion-ios-arrow-up:before,
+.ion-ios-at:before,
+.ion-ios-attach:before,
+.ion-ios-backspace:before,
+.ion-ios-barcode:before,
+.ion-ios-baseball:before,
+.ion-ios-basket:before,
+.ion-ios-basketball:before,
+.ion-ios-battery-charging:before,
+.ion-ios-battery-dead:before,
+.ion-ios-battery-full:before,
+.ion-ios-beaker:before,
+.ion-ios-bed:before,
+.ion-ios-beer:before,
+.ion-ios-bicycle:before,
+.ion-ios-bluetooth:before,
+.ion-ios-boat:before,
+.ion-ios-body:before,
+.ion-ios-bonfire:before,
+.ion-ios-book:before,
+.ion-ios-bookmark:before,
+.ion-ios-bookmarks:before,
+.ion-ios-bowtie:before,
+.ion-ios-briefcase:before,
+.ion-ios-browsers:before,
+.ion-ios-brush:before,
+.ion-ios-bug:before,
+.ion-ios-build:before,
+.ion-ios-bulb:before,
+.ion-ios-bus:before,
+.ion-ios-business:before,
+.ion-ios-cafe:before,
+.ion-ios-calculator:before,
+.ion-ios-calendar:before,
+.ion-ios-call:before,
+.ion-ios-camera:before,
+.ion-ios-car:before,
+.ion-ios-card:before,
+.ion-ios-cart:before,
+.ion-ios-cash:before,
+.ion-ios-cellular:before,
+.ion-ios-chatboxes:before,
+.ion-ios-chatbubbles:before,
+.ion-ios-checkbox:before,
+.ion-ios-checkbox-outline:before,
+.ion-ios-checkmark:before,
+.ion-ios-checkmark-circle:before,
+.ion-ios-checkmark-circle-outline:before,
+.ion-ios-clipboard:before,
+.ion-ios-clock:before,
+.ion-ios-close:before,
+.ion-ios-close-circle:before,
+.ion-ios-close-circle-outline:before,
+.ion-ios-cloud:before,
+.ion-ios-cloud-circle:before,
+.ion-ios-cloud-done:before,
+.ion-ios-cloud-download:before,
+.ion-ios-cloud-outline:before,
+.ion-ios-cloud-upload:before,
+.ion-ios-cloudy:before,
+.ion-ios-cloudy-night:before,
+.ion-ios-code:before,
+.ion-ios-code-download:before,
+.ion-ios-code-working:before,
+.ion-ios-cog:before,
+.ion-ios-color-fill:before,
+.ion-ios-color-filter:before,
+.ion-ios-color-palette:before,
+.ion-ios-color-wand:before,
+.ion-ios-compass:before,
+.ion-ios-construct:before,
+.ion-ios-contact:before,
+.ion-ios-contacts:before,
+.ion-ios-contract:before,
+.ion-ios-contrast:before,
+.ion-ios-copy:before,
+.ion-ios-create:before,
+.ion-ios-crop:before,
+.ion-ios-cube:before,
+.ion-ios-cut:before,
+.ion-ios-desktop:before,
+.ion-ios-disc:before,
+.ion-ios-document:before,
+.ion-ios-done-all:before,
+.ion-ios-download:before,
+.ion-ios-easel:before,
+.ion-ios-egg:before,
+.ion-ios-exit:before,
+.ion-ios-expand:before,
+.ion-ios-eye:before,
+.ion-ios-eye-off:before,
+.ion-ios-fastforward:before,
+.ion-ios-female:before,
+.ion-ios-filing:before,
+.ion-ios-film:before,
+.ion-ios-finger-print:before,
+.ion-ios-fitness:before,
+.ion-ios-flag:before,
+.ion-ios-flame:before,
+.ion-ios-flash:before,
+.ion-ios-flash-off:before,
+.ion-ios-flashlight:before,
+.ion-ios-flask:before,
+.ion-ios-flower:before,
+.ion-ios-folder:before,
+.ion-ios-folder-open:before,
+.ion-ios-football:before,
+.ion-ios-funnel:before,
+.ion-ios-gift:before,
+.ion-ios-git-branch:before,
+.ion-ios-git-commit:before,
+.ion-ios-git-compare:before,
+.ion-ios-git-merge:before,
+.ion-ios-git-network:before,
+.ion-ios-git-pull-request:before,
+.ion-ios-glasses:before,
+.ion-ios-globe:before,
+.ion-ios-grid:before,
+.ion-ios-hammer:before,
+.ion-ios-hand:before,
+.ion-ios-happy:before,
+.ion-ios-headset:before,
+.ion-ios-heart:before,
+.ion-ios-heart-dislike:before,
+.ion-ios-heart-empty:before,
+.ion-ios-heart-half:before,
+.ion-ios-help:before,
+.ion-ios-help-buoy:before,
+.ion-ios-help-circle:before,
+.ion-ios-help-circle-outline:before,
+.ion-ios-home:before,
+.ion-ios-hourglass:before,
+.ion-ios-ice-cream:before,
+.ion-ios-image:before,
+.ion-ios-images:before,
+.ion-ios-infinite:before,
+.ion-ios-information:before,
+.ion-ios-information-circle:before,
+.ion-ios-information-circle-outline:before,
+.ion-ios-jet:before,
+.ion-ios-journal:before,
+.ion-ios-key:before,
+.ion-ios-keypad:before,
+.ion-ios-laptop:before,
+.ion-ios-leaf:before,
+.ion-ios-link:before,
+.ion-ios-list:before,
+.ion-ios-list-box:before,
+.ion-ios-locate:before,
+.ion-ios-lock:before,
+.ion-ios-log-in:before,
+.ion-ios-log-out:before,
+.ion-ios-magnet:before,
+.ion-ios-mail:before,
+.ion-ios-mail-open:before,
+.ion-ios-mail-unread:before,
+.ion-ios-male:before,
+.ion-ios-man:before,
+.ion-ios-map:before,
+.ion-ios-medal:before,
+.ion-ios-medical:before,
+.ion-ios-medkit:before,
+.ion-ios-megaphone:before,
+.ion-ios-menu:before,
+.ion-ios-mic:before,
+.ion-ios-mic-off:before,
+.ion-ios-microphone:before,
+.ion-ios-moon:before,
+.ion-ios-more:before,
+.ion-ios-move:before,
+.ion-ios-musical-note:before,
+.ion-ios-musical-notes:before,
+.ion-ios-navigate:before,
+.ion-ios-notifications:before,
+.ion-ios-notifications-off:before,
+.ion-ios-notifications-outline:before,
+.ion-ios-nuclear:before,
+.ion-ios-nutrition:before,
+.ion-ios-open:before,
+.ion-ios-options:before,
+.ion-ios-outlet:before,
+.ion-ios-paper:before,
+.ion-ios-paper-plane:before,
+.ion-ios-partly-sunny:before,
+.ion-ios-pause:before,
+.ion-ios-paw:before,
+.ion-ios-people:before,
+.ion-ios-person:before,
+.ion-ios-person-add:before,
+.ion-ios-phone-landscape:before,
+.ion-ios-phone-portrait:before,
+.ion-ios-photos:before,
+.ion-ios-pie:before,
+.ion-ios-pin:before,
+.ion-ios-pint:before,
+.ion-ios-pizza:before,
+.ion-ios-planet:before,
+.ion-ios-play:before,
+.ion-ios-play-circle:before,
+.ion-ios-podium:before,
+.ion-ios-power:before,
+.ion-ios-pricetag:before,
+.ion-ios-pricetags:before,
+.ion-ios-print:before,
+.ion-ios-pulse:before,
+.ion-ios-qr-scanner:before,
+.ion-ios-quote:before,
+.ion-ios-radio:before,
+.ion-ios-radio-button-off:before,
+.ion-ios-radio-button-on:before,
+.ion-ios-rainy:before,
+.ion-ios-recording:before,
+.ion-ios-redo:before,
+.ion-ios-refresh:before,
+.ion-ios-refresh-circle:before,
+.ion-ios-remove:before,
+.ion-ios-remove-circle:before,
+.ion-ios-remove-circle-outline:before,
+.ion-ios-reorder:before,
+.ion-ios-repeat:before,
+.ion-ios-resize:before,
+.ion-ios-restaurant:before,
+.ion-ios-return-left:before,
+.ion-ios-return-right:before,
+.ion-ios-reverse-camera:before,
+.ion-ios-rewind:before,
+.ion-ios-ribbon:before,
+.ion-ios-rocket:before,
+.ion-ios-rose:before,
+.ion-ios-sad:before,
+.ion-ios-save:before,
+.ion-ios-school:before,
+.ion-ios-search:before,
+.ion-ios-send:before,
+.ion-ios-settings:before,
+.ion-ios-share:before,
+.ion-ios-share-alt:before,
+.ion-ios-shirt:before,
+.ion-ios-shuffle:before,
+.ion-ios-skip-backward:before,
+.ion-ios-skip-forward:before,
+.ion-ios-snow:before,
+.ion-ios-speedometer:before,
+.ion-ios-square:before,
+.ion-ios-square-outline:before,
+.ion-ios-star:before,
+.ion-ios-star-half:before,
+.ion-ios-star-outline:before,
+.ion-ios-stats:before,
+.ion-ios-stopwatch:before,
+.ion-ios-subway:before,
+.ion-ios-sunny:before,
+.ion-ios-swap:before,
+.ion-ios-switch:before,
+.ion-ios-sync:before,
+.ion-ios-tablet-landscape:before,
+.ion-ios-tablet-portrait:before,
+.ion-ios-tennisball:before,
+.ion-ios-text:before,
+.ion-ios-thermometer:before,
+.ion-ios-thumbs-down:before,
+.ion-ios-thumbs-up:before,
+.ion-ios-thunderstorm:before,
+.ion-ios-time:before,
+.ion-ios-timer:before,
+.ion-ios-today:before,
+.ion-ios-train:before,
+.ion-ios-transgender:before,
+.ion-ios-trash:before,
+.ion-ios-trending-down:before,
+.ion-ios-trending-up:before,
+.ion-ios-trophy:before,
+.ion-ios-tv:before,
+.ion-ios-umbrella:before,
+.ion-ios-undo:before,
+.ion-ios-unlock:before,
+.ion-ios-videocam:before,
+.ion-ios-volume-high:before,
+.ion-ios-volume-low:before,
+.ion-ios-volume-mute:before,
+.ion-ios-volume-off:before,
+.ion-ios-walk:before,
+.ion-ios-wallet:before,
+.ion-ios-warning:before,
+.ion-ios-watch:before,
+.ion-ios-water:before,
+.ion-ios-wifi:before,
+.ion-ios-wine:before,
+.ion-ios-woman:before,
+.ion-logo-android:before,
+.ion-logo-angular:before,
+.ion-logo-apple:before,
+.ion-logo-bitbucket:before,
+.ion-logo-bitcoin:before,
+.ion-logo-buffer:before,
+.ion-logo-chrome:before,
+.ion-logo-closed-captioning:before,
+.ion-logo-codepen:before,
+.ion-logo-css3:before,
+.ion-logo-designernews:before,
+.ion-logo-dribbble:before,
+.ion-logo-dropbox:before,
+.ion-logo-euro:before,
+.ion-logo-facebook:before,
+.ion-logo-flickr:before,
+.ion-logo-foursquare:before,
+.ion-logo-freebsd-devil:before,
+.ion-logo-game-controller-a:before,
+.ion-logo-game-controller-b:before,
+.ion-logo-github:before,
+.ion-logo-google:before,
+.ion-logo-googleplus:before,
+.ion-logo-hackernews:before,
+.ion-logo-html5:before,
+.ion-logo-instagram:before,
+.ion-logo-ionic:before,
+.ion-logo-ionitron:before,
+.ion-logo-javascript:before,
+.ion-logo-linkedin:before,
+.ion-logo-markdown:before,
+.ion-logo-model-s:before,
+.ion-logo-no-smoking:before,
+.ion-logo-nodejs:before,
+.ion-logo-npm:before,
+.ion-logo-octocat:before,
+.ion-logo-pinterest:before,
+.ion-logo-playstation:before,
+.ion-logo-polymer:before,
+.ion-logo-python:before,
+.ion-logo-reddit:before,
+.ion-logo-rss:before,
+.ion-logo-sass:before,
+.ion-logo-skype:before,
+.ion-logo-slack:before,
+.ion-logo-snapchat:before,
+.ion-logo-steam:before,
+.ion-logo-tumblr:before,
+.ion-logo-tux:before,
+.ion-logo-twitch:before,
+.ion-logo-twitter:before,
+.ion-logo-usd:before,
+.ion-logo-vimeo:before,
+.ion-logo-vk:before,
+.ion-logo-whatsapp:before,
+.ion-logo-windows:before,
+.ion-logo-wordpress:before,
+.ion-logo-xbox:before,
+.ion-logo-xing:before,
+.ion-logo-yahoo:before,
+.ion-logo-yen:before,
+.ion-logo-youtube:before,
+.ion-md-add:before,
+.ion-md-add-circle:before,
+.ion-md-add-circle-outline:before,
+.ion-md-airplane:before,
+.ion-md-alarm:before,
+.ion-md-albums:before,
+.ion-md-alert:before,
+.ion-md-american-football:before,
+.ion-md-analytics:before,
+.ion-md-aperture:before,
+.ion-md-apps:before,
+.ion-md-appstore:before,
+.ion-md-archive:before,
+.ion-md-arrow-back:before,
+.ion-md-arrow-down:before,
+.ion-md-arrow-dropdown:before,
+.ion-md-arrow-dropdown-circle:before,
+.ion-md-arrow-dropleft:before,
+.ion-md-arrow-dropleft-circle:before,
+.ion-md-arrow-dropright:before,
+.ion-md-arrow-dropright-circle:before,
+.ion-md-arrow-dropup:before,
+.ion-md-arrow-dropup-circle:before,
+.ion-md-arrow-forward:before,
+.ion-md-arrow-round-back:before,
+.ion-md-arrow-round-down:before,
+.ion-md-arrow-round-forward:before,
+.ion-md-arrow-round-up:before,
+.ion-md-arrow-up:before,
+.ion-md-at:before,
+.ion-md-attach:before,
+.ion-md-backspace:before,
+.ion-md-barcode:before,
+.ion-md-baseball:before,
+.ion-md-basket:before,
+.ion-md-basketball:before,
+.ion-md-battery-charging:before,
+.ion-md-battery-dead:before,
+.ion-md-battery-full:before,
+.ion-md-beaker:before,
+.ion-md-bed:before,
+.ion-md-beer:before,
+.ion-md-bicycle:before,
+.ion-md-bluetooth:before,
+.ion-md-boat:before,
+.ion-md-body:before,
+.ion-md-bonfire:before,
+.ion-md-book:before,
+.ion-md-bookmark:before,
+.ion-md-bookmarks:before,
+.ion-md-bowtie:before,
+.ion-md-briefcase:before,
+.ion-md-browsers:before,
+.ion-md-brush:before,
+.ion-md-bug:before,
+.ion-md-build:before,
+.ion-md-bulb:before,
+.ion-md-bus:before,
+.ion-md-business:before,
+.ion-md-cafe:before,
+.ion-md-calculator:before,
+.ion-md-calendar:before,
+.ion-md-call:before,
+.ion-md-camera:before,
+.ion-md-car:before,
+.ion-md-card:before,
+.ion-md-cart:before,
+.ion-md-cash:before,
+.ion-md-cellular:before,
+.ion-md-chatboxes:before,
+.ion-md-chatbubbles:before,
+.ion-md-checkbox:before,
+.ion-md-checkbox-outline:before,
+.ion-md-checkmark:before,
+.ion-md-checkmark-circle:before,
+.ion-md-checkmark-circle-outline:before,
+.ion-md-clipboard:before,
+.ion-md-clock:before,
+.ion-md-close:before,
+.ion-md-close-circle:before,
+.ion-md-close-circle-outline:before,
+.ion-md-cloud:before,
+.ion-md-cloud-circle:before,
+.ion-md-cloud-done:before,
+.ion-md-cloud-download:before,
+.ion-md-cloud-outline:before,
+.ion-md-cloud-upload:before,
+.ion-md-cloudy:before,
+.ion-md-cloudy-night:before,
+.ion-md-code:before,
+.ion-md-code-download:before,
+.ion-md-code-working:before,
+.ion-md-cog:before,
+.ion-md-color-fill:before,
+.ion-md-color-filter:before,
+.ion-md-color-palette:before,
+.ion-md-color-wand:before,
+.ion-md-compass:before,
+.ion-md-construct:before,
+.ion-md-contact:before,
+.ion-md-contacts:before,
+.ion-md-contract:before,
+.ion-md-contrast:before,
+.ion-md-copy:before,
+.ion-md-create:before,
+.ion-md-crop:before,
+.ion-md-cube:before,
+.ion-md-cut:before,
+.ion-md-desktop:before,
+.ion-md-disc:before,
+.ion-md-document:before,
+.ion-md-done-all:before,
+.ion-md-download:before,
+.ion-md-easel:before,
+.ion-md-egg:before,
+.ion-md-exit:before,
+.ion-md-expand:before,
+.ion-md-eye:before,
+.ion-md-eye-off:before,
+.ion-md-fastforward:before,
+.ion-md-female:before,
+.ion-md-filing:before,
+.ion-md-film:before,
+.ion-md-finger-print:before,
+.ion-md-fitness:before,
+.ion-md-flag:before,
+.ion-md-flame:before,
+.ion-md-flash:before,
+.ion-md-flash-off:before,
+.ion-md-flashlight:before,
+.ion-md-flask:before,
+.ion-md-flower:before,
+.ion-md-folder:before,
+.ion-md-folder-open:before,
+.ion-md-football:before,
+.ion-md-funnel:before,
+.ion-md-gift:before,
+.ion-md-git-branch:before,
+.ion-md-git-commit:before,
+.ion-md-git-compare:before,
+.ion-md-git-merge:before,
+.ion-md-git-network:before,
+.ion-md-git-pull-request:before,
+.ion-md-glasses:before,
+.ion-md-globe:before,
+.ion-md-grid:before,
+.ion-md-hammer:before,
+.ion-md-hand:before,
+.ion-md-happy:before,
+.ion-md-headset:before,
+.ion-md-heart:before,
+.ion-md-heart-dislike:before,
+.ion-md-heart-empty:before,
+.ion-md-heart-half:before,
+.ion-md-help:before,
+.ion-md-help-buoy:before,
+.ion-md-help-circle:before,
+.ion-md-help-circle-outline:before,
+.ion-md-home:before,
+.ion-md-hourglass:before,
+.ion-md-ice-cream:before,
+.ion-md-image:before,
+.ion-md-images:before,
+.ion-md-infinite:before,
+.ion-md-information:before,
+.ion-md-information-circle:before,
+.ion-md-information-circle-outline:before,
+.ion-md-jet:before,
+.ion-md-journal:before,
+.ion-md-key:before,
+.ion-md-keypad:before,
+.ion-md-laptop:before,
+.ion-md-leaf:before,
+.ion-md-link:before,
+.ion-md-list:before,
+.ion-md-list-box:before,
+.ion-md-locate:before,
+.ion-md-lock:before,
+.ion-md-log-in:before,
+.ion-md-log-out:before,
+.ion-md-magnet:before,
+.ion-md-mail:before,
+.ion-md-mail-open:before,
+.ion-md-mail-unread:before,
+.ion-md-male:before,
+.ion-md-man:before,
+.ion-md-map:before,
+.ion-md-medal:before,
+.ion-md-medical:before,
+.ion-md-medkit:before,
+.ion-md-megaphone:before,
+.ion-md-menu:before,
+.ion-md-mic:before,
+.ion-md-mic-off:before,
+.ion-md-microphone:before,
+.ion-md-moon:before,
+.ion-md-more:before,
+.ion-md-move:before,
+.ion-md-musical-note:before,
+.ion-md-musical-notes:before,
+.ion-md-navigate:before,
+.ion-md-notifications:before,
+.ion-md-notifications-off:before,
+.ion-md-notifications-outline:before,
+.ion-md-nuclear:before,
+.ion-md-nutrition:before,
+.ion-md-open:before,
+.ion-md-options:before,
+.ion-md-outlet:before,
+.ion-md-paper:before,
+.ion-md-paper-plane:before,
+.ion-md-partly-sunny:before,
+.ion-md-pause:before,
+.ion-md-paw:before,
+.ion-md-people:before,
+.ion-md-person:before,
+.ion-md-person-add:before,
+.ion-md-phone-landscape:before,
+.ion-md-phone-portrait:before,
+.ion-md-photos:before,
+.ion-md-pie:before,
+.ion-md-pin:before,
+.ion-md-pint:before,
+.ion-md-pizza:before,
+.ion-md-planet:before,
+.ion-md-play:before,
+.ion-md-play-circle:before,
+.ion-md-podium:before,
+.ion-md-power:before,
+.ion-md-pricetag:before,
+.ion-md-pricetags:before,
+.ion-md-print:before,
+.ion-md-pulse:before,
+.ion-md-qr-scanner:before,
+.ion-md-quote:before,
+.ion-md-radio:before,
+.ion-md-radio-button-off:before,
+.ion-md-radio-button-on:before,
+.ion-md-rainy:before,
+.ion-md-recording:before,
+.ion-md-redo:before,
+.ion-md-refresh:before,
+.ion-md-refresh-circle:before,
+.ion-md-remove:before,
+.ion-md-remove-circle:before,
+.ion-md-remove-circle-outline:before,
+.ion-md-reorder:before,
+.ion-md-repeat:before,
+.ion-md-resize:before,
+.ion-md-restaurant:before,
+.ion-md-return-left:before,
+.ion-md-return-right:before,
+.ion-md-reverse-camera:before,
+.ion-md-rewind:before,
+.ion-md-ribbon:before,
+.ion-md-rocket:before,
+.ion-md-rose:before,
+.ion-md-sad:before,
+.ion-md-save:before,
+.ion-md-school:before,
+.ion-md-search:before,
+.ion-md-send:before,
+.ion-md-settings:before,
+.ion-md-share:before,
+.ion-md-share-alt:before,
+.ion-md-shirt:before,
+.ion-md-shuffle:before,
+.ion-md-skip-backward:before,
+.ion-md-skip-forward:before,
+.ion-md-snow:before,
+.ion-md-speedometer:before,
+.ion-md-square:before,
+.ion-md-square-outline:before,
+.ion-md-star:before,
+.ion-md-star-half:before,
+.ion-md-star-outline:before,
+.ion-md-stats:before,
+.ion-md-stopwatch:before,
+.ion-md-subway:before,
+.ion-md-sunny:before,
+.ion-md-swap:before,
+.ion-md-switch:before,
+.ion-md-sync:before,
+.ion-md-tablet-landscape:before,
+.ion-md-tablet-portrait:before,
+.ion-md-tennisball:before,
+.ion-md-text:before,
+.ion-md-thermometer:before,
+.ion-md-thumbs-down:before,
+.ion-md-thumbs-up:before,
+.ion-md-thunderstorm:before,
+.ion-md-time:before,
+.ion-md-timer:before,
+.ion-md-today:before,
+.ion-md-train:before,
+.ion-md-transgender:before,
+.ion-md-trash:before,
+.ion-md-trending-down:before,
+.ion-md-trending-up:before,
+.ion-md-trophy:before,
+.ion-md-tv:before,
+.ion-md-umbrella:before,
+.ion-md-undo:before,
+.ion-md-unlock:before,
+.ion-md-videocam:before,
+.ion-md-volume-high:before,
+.ion-md-volume-low:before,
+.ion-md-volume-mute:before,
+.ion-md-volume-off:before,
+.ion-md-walk:before,
+.ion-md-wallet:before,
+.ion-md-warning:before,
+.ion-md-watch:before,
+.ion-md-water:before,
+.ion-md-wifi:before,
+.ion-md-wine:before,
+.ion-md-woman:before {
   display: inline-block;
   font-family: "Ionicons";
   speak: none;
@@ -23478,16 +24202,19 @@ readers do not read off random characters that represent icons */
 }
 /* @FONT-FACE loads font into browser */
 @font-face {
-  font-family: 'typicons';
+  font-family: "typicons";
   font-weight: normal;
   font-style: normal;
   src: url("../fonts/typicons.eot");
-  src: url("../fonts/typicons.eot?#iefix") format("embedded-opentype"), url("../fonts/typicons.woff") format("woff"), url("../fonts/typicons.ttf") format("truetype"), url("../fonts/typicons.svg#typicons") format("svg");
+  src: url("../fonts/typicons.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/typicons.woff") format("woff"),
+    url("../fonts/typicons.ttf") format("truetype"),
+    url("../fonts/typicons.svg#typicons") format("svg");
 }
 
 /* :before psuedo-selector inserts and styles icon */
 .typcn:before {
-  font-family: 'typicons';
+  font-family: "typicons";
   font-style: normal;
   font-weight: normal;
   speak: none;
@@ -23504,1695 +24231,1699 @@ readers do not read off random characters that represent icons */
 
 /* Code for individual icons */
 .typcn-adjust-brightness:before {
-  content: '\e000';
+  content: "\e000";
   /* '' */
 }
 
 .typcn-adjust-contrast:before {
-  content: '\e001';
+  content: "\e001";
   /* '' */
 }
 
 .typcn-anchor-outline:before {
-  content: '\e002';
+  content: "\e002";
   /* '' */
 }
 
 .typcn-anchor:before {
-  content: '\e003';
+  content: "\e003";
   /* '' */
 }
 
 .typcn-archive:before {
-  content: '\e004';
+  content: "\e004";
   /* '' */
 }
 
 .typcn-arrow-back-outline:before {
-  content: '\e005';
+  content: "\e005";
   /* '' */
 }
 
 .typcn-arrow-back:before {
-  content: '\e006';
+  content: "\e006";
   /* '' */
 }
 
 .typcn-arrow-down-outline:before {
-  content: '\e007';
+  content: "\e007";
   /* '' */
 }
 
 .typcn-arrow-down-thick:before {
-  content: '\e008';
+  content: "\e008";
   /* '' */
 }
 
 .typcn-arrow-down:before {
-  content: '\e009';
+  content: "\e009";
   /* '' */
 }
 
 .typcn-arrow-forward-outline:before {
-  content: '\e00a';
+  content: "\e00a";
   /* '' */
 }
 
 .typcn-arrow-forward:before {
-  content: '\e00b';
+  content: "\e00b";
   /* '' */
 }
 
 .typcn-arrow-left-outline:before {
-  content: '\e00c';
+  content: "\e00c";
   /* '' */
 }
 
 .typcn-arrow-left-thick:before {
-  content: '\e00d';
+  content: "\e00d";
   /* '' */
 }
 
 .typcn-arrow-left:before {
-  content: '\e00e';
+  content: "\e00e";
   /* '' */
 }
 
 .typcn-arrow-loop-outline:before {
-  content: '\e00f';
+  content: "\e00f";
   /* '' */
 }
 
 .typcn-arrow-loop:before {
-  content: '\e010';
+  content: "\e010";
   /* '' */
 }
 
 .typcn-arrow-maximise-outline:before {
-  content: '\e011';
+  content: "\e011";
   /* '' */
 }
 
 .typcn-arrow-maximise:before {
-  content: '\e012';
+  content: "\e012";
   /* '' */
 }
 
 .typcn-arrow-minimise-outline:before {
-  content: '\e013';
+  content: "\e013";
   /* '' */
 }
 
 .typcn-arrow-minimise:before {
-  content: '\e014';
+  content: "\e014";
   /* '' */
 }
 
 .typcn-arrow-move-outline:before {
-  content: '\e015';
+  content: "\e015";
   /* '' */
 }
 
 .typcn-arrow-move:before {
-  content: '\e016';
+  content: "\e016";
   /* '' */
 }
 
 .typcn-arrow-repeat-outline:before {
-  content: '\e017';
+  content: "\e017";
   /* '' */
 }
 
 .typcn-arrow-repeat:before {
-  content: '\e018';
+  content: "\e018";
   /* '' */
 }
 
 .typcn-arrow-right-outline:before {
-  content: '\e019';
+  content: "\e019";
   /* '' */
 }
 
 .typcn-arrow-right-thick:before {
-  content: '\e01a';
+  content: "\e01a";
   /* '' */
 }
 
 .typcn-arrow-right:before {
-  content: '\e01b';
+  content: "\e01b";
   /* '' */
 }
 
 .typcn-arrow-shuffle:before {
-  content: '\e01c';
+  content: "\e01c";
   /* '' */
 }
 
 .typcn-arrow-sorted-down:before {
-  content: '\e01d';
+  content: "\e01d";
   /* '' */
 }
 
 .typcn-arrow-sorted-up:before {
-  content: '\e01e';
+  content: "\e01e";
   /* '' */
 }
 
 .typcn-arrow-sync-outline:before {
-  content: '\e01f';
+  content: "\e01f";
   /* '' */
 }
 
 .typcn-arrow-sync:before {
-  content: '\e020';
+  content: "\e020";
   /* '' */
 }
 
 .typcn-arrow-unsorted:before {
-  content: '\e021';
+  content: "\e021";
   /* '' */
 }
 
 .typcn-arrow-up-outline:before {
-  content: '\e022';
+  content: "\e022";
   /* '' */
 }
 
 .typcn-arrow-up-thick:before {
-  content: '\e023';
+  content: "\e023";
   /* '' */
 }
 
 .typcn-arrow-up:before {
-  content: '\e024';
+  content: "\e024";
   /* '' */
 }
 
 .typcn-at:before {
-  content: '\e025';
+  content: "\e025";
   /* '' */
 }
 
 .typcn-attachment-outline:before {
-  content: '\e026';
+  content: "\e026";
   /* '' */
 }
 
 .typcn-attachment:before {
-  content: '\e027';
+  content: "\e027";
   /* '' */
 }
 
 .typcn-backspace-outline:before {
-  content: '\e028';
+  content: "\e028";
   /* '' */
 }
 
 .typcn-backspace:before {
-  content: '\e029';
+  content: "\e029";
   /* '' */
 }
 
 .typcn-battery-charge:before {
-  content: '\e02a';
+  content: "\e02a";
   /* '' */
 }
 
 .typcn-battery-full:before {
-  content: '\e02b';
+  content: "\e02b";
   /* '' */
 }
 
 .typcn-battery-high:before {
-  content: '\e02c';
+  content: "\e02c";
   /* '' */
 }
 
 .typcn-battery-low:before {
-  content: '\e02d';
+  content: "\e02d";
   /* '' */
 }
 
 .typcn-battery-mid:before {
-  content: '\e02e';
+  content: "\e02e";
   /* '' */
 }
 
 .typcn-beaker:before {
-  content: '\e02f';
+  content: "\e02f";
   /* '' */
 }
 
 .typcn-beer:before {
-  content: '\e030';
+  content: "\e030";
   /* '' */
 }
 
 .typcn-bell:before {
-  content: '\e031';
+  content: "\e031";
   /* '' */
 }
 
 .typcn-book:before {
-  content: '\e032';
+  content: "\e032";
   /* '' */
 }
 
 .typcn-bookmark:before {
-  content: '\e033';
+  content: "\e033";
   /* '' */
 }
 
 .typcn-briefcase:before {
-  content: '\e034';
+  content: "\e034";
   /* '' */
 }
 
 .typcn-brush:before {
-  content: '\e035';
+  content: "\e035";
   /* '' */
 }
 
 .typcn-business-card:before {
-  content: '\e036';
+  content: "\e036";
   /* '' */
 }
 
 .typcn-calculator:before {
-  content: '\e037';
+  content: "\e037";
   /* '' */
 }
 
 .typcn-calendar-outline:before {
-  content: '\e038';
+  content: "\e038";
   /* '' */
 }
 
 .typcn-calendar:before {
-  content: '\e039';
+  content: "\e039";
   /* '' */
 }
 
 .typcn-camera-outline:before {
-  content: '\e03a';
+  content: "\e03a";
   /* '' */
 }
 
 .typcn-camera:before {
-  content: '\e03b';
+  content: "\e03b";
   /* '' */
 }
 
 .typcn-cancel-outline:before {
-  content: '\e03c';
+  content: "\e03c";
   /* '' */
 }
 
 .typcn-cancel:before {
-  content: '\e03d';
+  content: "\e03d";
   /* '' */
 }
 
 .typcn-chart-area-outline:before {
-  content: '\e03e';
+  content: "\e03e";
   /* '' */
 }
 
 .typcn-chart-area:before {
-  content: '\e03f';
+  content: "\e03f";
   /* '' */
 }
 
 .typcn-chart-bar-outline:before {
-  content: '\e040';
+  content: "\e040";
   /* '' */
 }
 
 .typcn-chart-bar:before {
-  content: '\e041';
+  content: "\e041";
   /* '' */
 }
 
 .typcn-chart-line-outline:before {
-  content: '\e042';
+  content: "\e042";
   /* '' */
 }
 
 .typcn-chart-line:before {
-  content: '\e043';
+  content: "\e043";
   /* '' */
 }
 
 .typcn-chart-pie-outline:before {
-  content: '\e044';
+  content: "\e044";
   /* '' */
 }
 
 .typcn-chart-pie:before {
-  content: '\e045';
+  content: "\e045";
   /* '' */
 }
 
 .typcn-chevron-left-outline:before {
-  content: '\e046';
+  content: "\e046";
   /* '' */
 }
 
 .typcn-chevron-left:before {
-  content: '\e047';
+  content: "\e047";
   /* '' */
 }
 
 .typcn-chevron-right-outline:before {
-  content: '\e048';
+  content: "\e048";
   /* '' */
 }
 
 .typcn-chevron-right:before {
-  content: '\e049';
+  content: "\e049";
   /* '' */
 }
 
 .typcn-clipboard:before {
-  content: '\e04a';
+  content: "\e04a";
   /* '' */
 }
 
 .typcn-cloud-storage:before {
-  content: '\e04b';
+  content: "\e04b";
   /* '' */
 }
 
 .typcn-cloud-storage-outline:before {
-  content: '\e054';
+  content: "\e054";
   /* '' */
 }
 
 .typcn-code-outline:before {
-  content: '\e04c';
+  content: "\e04c";
   /* '' */
 }
 
 .typcn-code:before {
-  content: '\e04d';
+  content: "\e04d";
   /* '' */
 }
 
 .typcn-coffee:before {
-  content: '\e04e';
+  content: "\e04e";
   /* '' */
 }
 
 .typcn-cog-outline:before {
-  content: '\e04f';
+  content: "\e04f";
   /* '' */
 }
 
 .typcn-cog:before {
-  content: '\e050';
+  content: "\e050";
   /* '' */
 }
 
 .typcn-compass:before {
-  content: '\e051';
+  content: "\e051";
   /* '' */
 }
 
 .typcn-contacts:before {
-  content: '\e052';
+  content: "\e052";
   /* '' */
 }
 
 .typcn-credit-card:before {
-  content: '\e053';
+  content: "\e053";
   /* '' */
 }
 
 .typcn-css3:before {
-  content: '\e055';
+  content: "\e055";
   /* '' */
 }
 
 .typcn-database:before {
-  content: '\e056';
+  content: "\e056";
   /* '' */
 }
 
 .typcn-delete-outline:before {
-  content: '\e057';
+  content: "\e057";
   /* '' */
 }
 
 .typcn-delete:before {
-  content: '\e058';
+  content: "\e058";
   /* '' */
 }
 
 .typcn-device-desktop:before {
-  content: '\e059';
+  content: "\e059";
   /* '' */
 }
 
 .typcn-device-laptop:before {
-  content: '\e05a';
+  content: "\e05a";
   /* '' */
 }
 
 .typcn-device-phone:before {
-  content: '\e05b';
+  content: "\e05b";
   /* '' */
 }
 
 .typcn-device-tablet:before {
-  content: '\e05c';
+  content: "\e05c";
   /* '' */
 }
 
 .typcn-directions:before {
-  content: '\e05d';
+  content: "\e05d";
   /* '' */
 }
 
 .typcn-divide-outline:before {
-  content: '\e05e';
+  content: "\e05e";
   /* '' */
 }
 
 .typcn-divide:before {
-  content: '\e05f';
+  content: "\e05f";
   /* '' */
 }
 
 .typcn-document-add:before {
-  content: '\e060';
+  content: "\e060";
   /* '' */
 }
 
 .typcn-document-delete:before {
-  content: '\e061';
+  content: "\e061";
   /* '' */
 }
 
 .typcn-document-text:before {
-  content: '\e062';
+  content: "\e062";
   /* '' */
 }
 
 .typcn-document:before {
-  content: '\e063';
+  content: "\e063";
   /* '' */
 }
 
 .typcn-download-outline:before {
-  content: '\e064';
+  content: "\e064";
   /* '' */
 }
 
 .typcn-download:before {
-  content: '\e065';
+  content: "\e065";
   /* '' */
 }
 
 .typcn-dropbox:before {
-  content: '\e066';
+  content: "\e066";
   /* '' */
 }
 
 .typcn-edit:before {
-  content: '\e067';
+  content: "\e067";
   /* '' */
 }
 
 .typcn-eject-outline:before {
-  content: '\e068';
+  content: "\e068";
   /* '' */
 }
 
 .typcn-eject:before {
-  content: '\e069';
+  content: "\e069";
   /* '' */
 }
 
 .typcn-equals-outline:before {
-  content: '\e06a';
+  content: "\e06a";
   /* '' */
 }
 
 .typcn-equals:before {
-  content: '\e06b';
+  content: "\e06b";
   /* '' */
 }
 
 .typcn-export-outline:before {
-  content: '\e06c';
+  content: "\e06c";
   /* '' */
 }
 
 .typcn-export:before {
-  content: '\e06d';
+  content: "\e06d";
   /* '' */
 }
 
 .typcn-eye-outline:before {
-  content: '\e06e';
+  content: "\e06e";
   /* '' */
 }
 
 .typcn-eye:before {
-  content: '\e06f';
+  content: "\e06f";
   /* '' */
 }
 
 .typcn-feather:before {
-  content: '\e070';
+  content: "\e070";
   /* '' */
 }
 
 .typcn-film:before {
-  content: '\e071';
+  content: "\e071";
   /* '' */
 }
 
 .typcn-filter:before {
-  content: '\e072';
+  content: "\e072";
   /* '' */
 }
 
 .typcn-flag-outline:before {
-  content: '\e073';
+  content: "\e073";
   /* '' */
 }
 
 .typcn-flag:before {
-  content: '\e074';
+  content: "\e074";
   /* '' */
 }
 
 .typcn-flash-outline:before {
-  content: '\e075';
+  content: "\e075";
   /* '' */
 }
 
 .typcn-flash:before {
-  content: '\e076';
+  content: "\e076";
   /* '' */
 }
 
 .typcn-flow-children:before {
-  content: '\e077';
+  content: "\e077";
   /* '' */
 }
 
 .typcn-flow-merge:before {
-  content: '\e078';
+  content: "\e078";
   /* '' */
 }
 
 .typcn-flow-parallel:before {
-  content: '\e079';
+  content: "\e079";
   /* '' */
 }
 
 .typcn-flow-switch:before {
-  content: '\e07a';
+  content: "\e07a";
   /* '' */
 }
 
 .typcn-folder-add:before {
-  content: '\e07b';
+  content: "\e07b";
   /* '' */
 }
 
 .typcn-folder-delete:before {
-  content: '\e07c';
+  content: "\e07c";
   /* '' */
 }
 
 .typcn-folder-open:before {
-  content: '\e07d';
+  content: "\e07d";
   /* '' */
 }
 
 .typcn-folder:before {
-  content: '\e07e';
+  content: "\e07e";
   /* '' */
 }
 
 .typcn-gift:before {
-  content: '\e07f';
+  content: "\e07f";
   /* '' */
 }
 
 .typcn-globe-outline:before {
-  content: '\e080';
+  content: "\e080";
   /* '' */
 }
 
 .typcn-globe:before {
-  content: '\e081';
+  content: "\e081";
   /* '' */
 }
 
 .typcn-group-outline:before {
-  content: '\e082';
+  content: "\e082";
   /* '' */
 }
 
 .typcn-group:before {
-  content: '\e083';
+  content: "\e083";
   /* '' */
 }
 
 .typcn-headphones:before {
-  content: '\e084';
+  content: "\e084";
   /* '' */
 }
 
 .typcn-heart-full-outline:before {
-  content: '\e085';
+  content: "\e085";
   /* '' */
 }
 
 .typcn-heart-half-outline:before {
-  content: '\e086';
+  content: "\e086";
   /* '' */
 }
 
 .typcn-heart-outline:before {
-  content: '\e087';
+  content: "\e087";
   /* '' */
 }
 
 .typcn-heart:before {
-  content: '\e088';
+  content: "\e088";
   /* '' */
 }
 
 .typcn-home-outline:before {
-  content: '\e089';
+  content: "\e089";
   /* '' */
 }
 
 .typcn-home:before {
-  content: '\e08a';
+  content: "\e08a";
   /* '' */
 }
 
 .typcn-html5:before {
-  content: '\e08b';
+  content: "\e08b";
   /* '' */
 }
 
 .typcn-image-outline:before {
-  content: '\e08c';
+  content: "\e08c";
   /* '' */
 }
 
 .typcn-image:before {
-  content: '\e08d';
+  content: "\e08d";
   /* '' */
 }
 
 .typcn-infinity-outline:before {
-  content: '\e08e';
+  content: "\e08e";
   /* '' */
 }
 
 .typcn-infinity:before {
-  content: '\e08f';
+  content: "\e08f";
   /* '' */
 }
 
 .typcn-info-large-outline:before {
-  content: '\e090';
+  content: "\e090";
   /* '' */
 }
 
 .typcn-info-large:before {
-  content: '\e091';
+  content: "\e091";
   /* '' */
 }
 
 .typcn-info-outline:before {
-  content: '\e092';
+  content: "\e092";
   /* '' */
 }
 
 .typcn-info:before {
-  content: '\e093';
+  content: "\e093";
   /* '' */
 }
 
 .typcn-input-checked-outline:before {
-  content: '\e094';
+  content: "\e094";
   /* '' */
 }
 
 .typcn-input-checked:before {
-  content: '\e095';
+  content: "\e095";
   /* '' */
 }
 
 .typcn-key-outline:before {
-  content: '\e096';
+  content: "\e096";
   /* '' */
 }
 
 .typcn-key:before {
-  content: '\e097';
+  content: "\e097";
   /* '' */
 }
 
 .typcn-keyboard:before {
-  content: '\e098';
+  content: "\e098";
   /* '' */
 }
 
 .typcn-leaf:before {
-  content: '\e099';
+  content: "\e099";
   /* '' */
 }
 
 .typcn-lightbulb:before {
-  content: '\e09a';
+  content: "\e09a";
   /* '' */
 }
 
 .typcn-link-outline:before {
-  content: '\e09b';
+  content: "\e09b";
   /* '' */
 }
 
 .typcn-link:before {
-  content: '\e09c';
+  content: "\e09c";
   /* '' */
 }
 
 .typcn-location-arrow-outline:before {
-  content: '\e09d';
+  content: "\e09d";
   /* '' */
 }
 
 .typcn-location-arrow:before {
-  content: '\e09e';
+  content: "\e09e";
   /* '' */
 }
 
 .typcn-location-outline:before {
-  content: '\e09f';
+  content: "\e09f";
   /* '' */
 }
 
 .typcn-location:before {
-  content: '\e0a0';
+  content: "\e0a0";
   /* '' */
 }
 
 .typcn-lock-closed-outline:before {
-  content: '\e0a1';
+  content: "\e0a1";
   /* '' */
 }
 
 .typcn-lock-closed:before {
-  content: '\e0a2';
+  content: "\e0a2";
   /* '' */
 }
 
 .typcn-lock-open-outline:before {
-  content: '\e0a3';
+  content: "\e0a3";
   /* '' */
 }
 
 .typcn-lock-open:before {
-  content: '\e0a4';
+  content: "\e0a4";
   /* '' */
 }
 
 .typcn-mail:before {
-  content: '\e0a5';
+  content: "\e0a5";
   /* '' */
 }
 
 .typcn-map:before {
-  content: '\e0a6';
+  content: "\e0a6";
   /* '' */
 }
 
 .typcn-media-eject-outline:before {
-  content: '\e0a7';
+  content: "\e0a7";
   /* '' */
 }
 
 .typcn-media-eject:before {
-  content: '\e0a8';
+  content: "\e0a8";
   /* '' */
 }
 
 .typcn-media-fast-forward-outline:before {
-  content: '\e0a9';
+  content: "\e0a9";
   /* '' */
 }
 
 .typcn-media-fast-forward:before {
-  content: '\e0aa';
+  content: "\e0aa";
   /* '' */
 }
 
 .typcn-media-pause-outline:before {
-  content: '\e0ab';
+  content: "\e0ab";
   /* '' */
 }
 
 .typcn-media-pause:before {
-  content: '\e0ac';
+  content: "\e0ac";
   /* '' */
 }
 
 .typcn-media-play-outline:before {
-  content: '\e0ad';
+  content: "\e0ad";
   /* '' */
 }
 
 .typcn-media-play-reverse-outline:before {
-  content: '\e0ae';
+  content: "\e0ae";
   /* '' */
 }
 
 .typcn-media-play-reverse:before {
-  content: '\e0af';
+  content: "\e0af";
   /* '' */
 }
 
 .typcn-media-play:before {
-  content: '\e0b0';
+  content: "\e0b0";
   /* '' */
 }
 
 .typcn-media-record-outline:before {
-  content: '\e0b1';
+  content: "\e0b1";
   /* '' */
 }
 
 .typcn-media-record:before {
-  content: '\e0b2';
+  content: "\e0b2";
   /* '' */
 }
 
 .typcn-media-rewind-outline:before {
-  content: '\e0b3';
+  content: "\e0b3";
   /* '' */
 }
 
 .typcn-media-rewind:before {
-  content: '\e0b4';
+  content: "\e0b4";
   /* '' */
 }
 
 .typcn-media-stop-outline:before {
-  content: '\e0b5';
+  content: "\e0b5";
   /* '' */
 }
 
 .typcn-media-stop:before {
-  content: '\e0b6';
+  content: "\e0b6";
   /* '' */
 }
 
 .typcn-message-typing:before {
-  content: '\e0b7';
+  content: "\e0b7";
   /* '' */
 }
 
 .typcn-message:before {
-  content: '\e0b8';
+  content: "\e0b8";
   /* '' */
 }
 
 .typcn-messages:before {
-  content: '\e0b9';
+  content: "\e0b9";
   /* '' */
 }
 
 .typcn-microphone-outline:before {
-  content: '\e0ba';
+  content: "\e0ba";
   /* '' */
 }
 
 .typcn-microphone:before {
-  content: '\e0bb';
+  content: "\e0bb";
   /* '' */
 }
 
 .typcn-minus-outline:before {
-  content: '\e0bc';
+  content: "\e0bc";
   /* '' */
 }
 
 .typcn-minus:before {
-  content: '\e0bd';
+  content: "\e0bd";
   /* '' */
 }
 
 .typcn-mortar-board:before {
-  content: '\e0be';
+  content: "\e0be";
   /* '' */
 }
 
 .typcn-news:before {
-  content: '\e0bf';
+  content: "\e0bf";
   /* '' */
 }
 
 .typcn-notes-outline:before {
-  content: '\e0c0';
+  content: "\e0c0";
   /* '' */
 }
 
 .typcn-notes:before {
-  content: '\e0c1';
+  content: "\e0c1";
   /* '' */
 }
 
 .typcn-pen:before {
-  content: '\e0c2';
+  content: "\e0c2";
   /* '' */
 }
 
 .typcn-pencil:before {
-  content: '\e0c3';
+  content: "\e0c3";
   /* '' */
 }
 
 .typcn-phone-outline:before {
-  content: '\e0c4';
+  content: "\e0c4";
   /* '' */
 }
 
 .typcn-phone:before {
-  content: '\e0c5';
+  content: "\e0c5";
   /* '' */
 }
 
 .typcn-pi-outline:before {
-  content: '\e0c6';
+  content: "\e0c6";
   /* '' */
 }
 
 .typcn-pi:before {
-  content: '\e0c7';
+  content: "\e0c7";
   /* '' */
 }
 
 .typcn-pin-outline:before {
-  content: '\e0c8';
+  content: "\e0c8";
   /* '' */
 }
 
 .typcn-pin:before {
-  content: '\e0c9';
+  content: "\e0c9";
   /* '' */
 }
 
 .typcn-pipette:before {
-  content: '\e0ca';
+  content: "\e0ca";
   /* '' */
 }
 
 .typcn-plane-outline:before {
-  content: '\e0cb';
+  content: "\e0cb";
   /* '' */
 }
 
 .typcn-plane:before {
-  content: '\e0cc';
+  content: "\e0cc";
   /* '' */
 }
 
 .typcn-plug:before {
-  content: '\e0cd';
+  content: "\e0cd";
   /* '' */
 }
 
 .typcn-plus-outline:before {
-  content: '\e0ce';
+  content: "\e0ce";
   /* '' */
 }
 
 .typcn-plus:before {
-  content: '\e0cf';
+  content: "\e0cf";
   /* '' */
 }
 
 .typcn-point-of-interest-outline:before {
-  content: '\e0d0';
+  content: "\e0d0";
   /* '' */
 }
 
 .typcn-point-of-interest:before {
-  content: '\e0d1';
+  content: "\e0d1";
   /* '' */
 }
 
 .typcn-power-outline:before {
-  content: '\e0d2';
+  content: "\e0d2";
   /* '' */
 }
 
 .typcn-power:before {
-  content: '\e0d3';
+  content: "\e0d3";
   /* '' */
 }
 
 .typcn-printer:before {
-  content: '\e0d4';
+  content: "\e0d4";
   /* '' */
 }
 
 .typcn-puzzle-outline:before {
-  content: '\e0d5';
+  content: "\e0d5";
   /* '' */
 }
 
 .typcn-puzzle:before {
-  content: '\e0d6';
+  content: "\e0d6";
   /* '' */
 }
 
 .typcn-radar-outline:before {
-  content: '\e0d7';
+  content: "\e0d7";
   /* '' */
 }
 
 .typcn-radar:before {
-  content: '\e0d8';
+  content: "\e0d8";
   /* '' */
 }
 
 .typcn-refresh-outline:before {
-  content: '\e0d9';
+  content: "\e0d9";
   /* '' */
 }
 
 .typcn-refresh:before {
-  content: '\e0da';
+  content: "\e0da";
   /* '' */
 }
 
 .typcn-rss-outline:before {
-  content: '\e0db';
+  content: "\e0db";
   /* '' */
 }
 
 .typcn-rss:before {
-  content: '\e0dc';
+  content: "\e0dc";
   /* '' */
 }
 
 .typcn-scissors-outline:before {
-  content: '\e0dd';
+  content: "\e0dd";
   /* '' */
 }
 
 .typcn-scissors:before {
-  content: '\e0de';
+  content: "\e0de";
   /* '' */
 }
 
 .typcn-shopping-bag:before {
-  content: '\e0df';
+  content: "\e0df";
   /* '' */
 }
 
 .typcn-shopping-cart:before {
-  content: '\e0e0';
+  content: "\e0e0";
   /* '' */
 }
 
 .typcn-social-at-circular:before {
-  content: '\e0e1';
+  content: "\e0e1";
   /* '' */
 }
 
 .typcn-social-dribbble-circular:before {
-  content: '\e0e2';
+  content: "\e0e2";
   /* '' */
 }
 
 .typcn-social-dribbble:before {
-  content: '\e0e3';
+  content: "\e0e3";
   /* '' */
 }
 
 .typcn-social-facebook-circular:before {
-  content: '\e0e4';
+  content: "\e0e4";
   /* '' */
 }
 
 .typcn-social-facebook:before {
-  content: '\e0e5';
+  content: "\e0e5";
   /* '' */
 }
 
 .typcn-social-flickr-circular:before {
-  content: '\e0e6';
+  content: "\e0e6";
   /* '' */
 }
 
 .typcn-social-flickr:before {
-  content: '\e0e7';
+  content: "\e0e7";
   /* '' */
 }
 
 .typcn-social-github-circular:before {
-  content: '\e0e8';
+  content: "\e0e8";
   /* '' */
 }
 
 .typcn-social-github:before {
-  content: '\e0e9';
+  content: "\e0e9";
   /* '' */
 }
 
 .typcn-social-google-plus-circular:before {
-  content: '\e0ea';
+  content: "\e0ea";
   /* '' */
 }
 
 .typcn-social-google-plus:before {
-  content: '\e0eb';
+  content: "\e0eb";
   /* '' */
 }
 
 .typcn-social-instagram-circular:before {
-  content: '\e0ec';
+  content: "\e0ec";
   /* '' */
 }
 
 .typcn-social-instagram:before {
-  content: '\e0ed';
+  content: "\e0ed";
   /* '' */
 }
 
 .typcn-social-last-fm-circular:before {
-  content: '\e0ee';
+  content: "\e0ee";
   /* '' */
 }
 
 .typcn-social-last-fm:before {
-  content: '\e0ef';
+  content: "\e0ef";
   /* '' */
 }
 
 .typcn-social-linkedin-circular:before {
-  content: '\e0f0';
+  content: "\e0f0";
   /* '' */
 }
 
 .typcn-social-linkedin:before {
-  content: '\e0f1';
+  content: "\e0f1";
   /* '' */
 }
 
 .typcn-social-pinterest-circular:before {
-  content: '\e0f2';
+  content: "\e0f2";
   /* '' */
 }
 
 .typcn-social-pinterest:before {
-  content: '\e0f3';
+  content: "\e0f3";
   /* '' */
 }
 
 .typcn-social-skype-outline:before {
-  content: '\e0f4';
+  content: "\e0f4";
   /* '' */
 }
 
 .typcn-social-skype:before {
-  content: '\e0f5';
+  content: "\e0f5";
   /* '' */
 }
 
 .typcn-social-tumbler-circular:before {
-  content: '\e0f6';
+  content: "\e0f6";
   /* '' */
 }
 
 .typcn-social-tumbler:before {
-  content: '\e0f7';
+  content: "\e0f7";
   /* '' */
 }
 
 .typcn-social-twitter-circular:before {
-  content: '\e0f8';
+  content: "\e0f8";
   /* '' */
 }
 
 .typcn-social-twitter:before {
-  content: '\e0f9';
+  content: "\e0f9";
   /* '' */
 }
 
 .typcn-social-vimeo-circular:before {
-  content: '\e0fa';
+  content: "\e0fa";
   /* '' */
 }
 
 .typcn-social-vimeo:before {
-  content: '\e0fb';
+  content: "\e0fb";
   /* '' */
 }
 
 .typcn-social-youtube-circular:before {
-  content: '\e0fc';
+  content: "\e0fc";
   /* '' */
 }
 
 .typcn-social-youtube:before {
-  content: '\e0fd';
+  content: "\e0fd";
   /* '' */
 }
 
 .typcn-sort-alphabetically-outline:before {
-  content: '\e0fe';
+  content: "\e0fe";
   /* '' */
 }
 
 .typcn-sort-alphabetically:before {
-  content: '\e0ff';
+  content: "\e0ff";
   /* '' */
 }
 
 .typcn-sort-numerically-outline:before {
-  content: '\e100';
+  content: "\e100";
   /* '' */
 }
 
 .typcn-sort-numerically:before {
-  content: '\e101';
+  content: "\e101";
   /* '' */
 }
 
 .typcn-spanner-outline:before {
-  content: '\e102';
+  content: "\e102";
   /* '' */
 }
 
 .typcn-spanner:before {
-  content: '\e103';
+  content: "\e103";
   /* '' */
 }
 
 .typcn-spiral:before {
-  content: '\e104';
+  content: "\e104";
   /* '' */
 }
 
 .typcn-star-full-outline:before {
-  content: '\e105';
+  content: "\e105";
   /* '' */
 }
 
 .typcn-star-half-outline:before {
-  content: '\e106';
+  content: "\e106";
   /* '' */
 }
 
 .typcn-star-half:before {
-  content: '\e107';
+  content: "\e107";
   /* '' */
 }
 
 .typcn-star-outline:before {
-  content: '\e108';
+  content: "\e108";
   /* '' */
 }
 
 .typcn-star:before {
-  content: '\e109';
+  content: "\e109";
   /* '' */
 }
 
 .typcn-starburst-outline:before {
-  content: '\e10a';
+  content: "\e10a";
   /* '' */
 }
 
 .typcn-starburst:before {
-  content: '\e10b';
+  content: "\e10b";
   /* '' */
 }
 
 .typcn-stopwatch:before {
-  content: '\e10c';
+  content: "\e10c";
   /* '' */
 }
 
 .typcn-support:before {
-  content: '\e10d';
+  content: "\e10d";
   /* '' */
 }
 
 .typcn-tabs-outline:before {
-  content: '\e10e';
+  content: "\e10e";
   /* '' */
 }
 
 .typcn-tag:before {
-  content: '\e10f';
+  content: "\e10f";
   /* '' */
 }
 
 .typcn-tags:before {
-  content: '\e110';
+  content: "\e110";
   /* '' */
 }
 
 .typcn-th-large-outline:before {
-  content: '\e111';
+  content: "\e111";
   /* '' */
 }
 
 .typcn-th-large:before {
-  content: '\e112';
+  content: "\e112";
   /* '' */
 }
 
 .typcn-th-list-outline:before {
-  content: '\e113';
+  content: "\e113";
   /* '' */
 }
 
 .typcn-th-list:before {
-  content: '\e114';
+  content: "\e114";
   /* '' */
 }
 
 .typcn-th-menu-outline:before {
-  content: '\e115';
+  content: "\e115";
   /* '' */
 }
 
 .typcn-th-menu:before {
-  content: '\e116';
+  content: "\e116";
   /* '' */
 }
 
 .typcn-th-small-outline:before {
-  content: '\e117';
+  content: "\e117";
   /* '' */
 }
 
 .typcn-th-small:before {
-  content: '\e118';
+  content: "\e118";
   /* '' */
 }
 
 .typcn-thermometer:before {
-  content: '\e119';
+  content: "\e119";
   /* '' */
 }
 
 .typcn-thumbs-down:before {
-  content: '\e11a';
+  content: "\e11a";
   /* '' */
 }
 
 .typcn-thumbs-ok:before {
-  content: '\e11b';
+  content: "\e11b";
   /* '' */
 }
 
 .typcn-thumbs-up:before {
-  content: '\e11c';
+  content: "\e11c";
   /* '' */
 }
 
 .typcn-tick-outline:before {
-  content: '\e11d';
+  content: "\e11d";
   /* '' */
 }
 
 .typcn-tick:before {
-  content: '\e11e';
+  content: "\e11e";
   /* '' */
 }
 
 .typcn-ticket:before {
-  content: '\e11f';
+  content: "\e11f";
   /* '' */
 }
 
 .typcn-time:before {
-  content: '\e120';
+  content: "\e120";
   /* '' */
 }
 
 .typcn-times-outline:before {
-  content: '\e121';
+  content: "\e121";
   /* '' */
 }
 
 .typcn-times:before {
-  content: '\e122';
+  content: "\e122";
   /* '' */
 }
 
 .typcn-trash:before {
-  content: '\e123';
+  content: "\e123";
   /* '' */
 }
 
 .typcn-tree:before {
-  content: '\e124';
+  content: "\e124";
   /* '' */
 }
 
 .typcn-upload-outline:before {
-  content: '\e125';
+  content: "\e125";
   /* '' */
 }
 
 .typcn-upload:before {
-  content: '\e126';
+  content: "\e126";
   /* '' */
 }
 
 .typcn-user-add-outline:before {
-  content: '\e127';
+  content: "\e127";
   /* '' */
 }
 
 .typcn-user-add:before {
-  content: '\e128';
+  content: "\e128";
   /* '' */
 }
 
 .typcn-user-delete-outline:before {
-  content: '\e129';
+  content: "\e129";
   /* '' */
 }
 
 .typcn-user-delete:before {
-  content: '\e12a';
+  content: "\e12a";
   /* '' */
 }
 
 .typcn-user-outline:before {
-  content: '\e12b';
+  content: "\e12b";
   /* '' */
 }
 
 .typcn-user:before {
-  content: '\e12c';
+  content: "\e12c";
   /* '' */
 }
 
 .typcn-vendor-android:before {
-  content: '\e12d';
+  content: "\e12d";
   /* '' */
 }
 
 .typcn-vendor-apple:before {
-  content: '\e12e';
+  content: "\e12e";
   /* '' */
 }
 
 .typcn-vendor-microsoft:before {
-  content: '\e12f';
+  content: "\e12f";
   /* '' */
 }
 
 .typcn-video-outline:before {
-  content: '\e130';
+  content: "\e130";
   /* '' */
 }
 
 .typcn-video:before {
-  content: '\e131';
+  content: "\e131";
   /* '' */
 }
 
 .typcn-volume-down:before {
-  content: '\e132';
+  content: "\e132";
   /* '' */
 }
 
 .typcn-volume-mute:before {
-  content: '\e133';
+  content: "\e133";
   /* '' */
 }
 
 .typcn-volume-up:before {
-  content: '\e134';
+  content: "\e134";
   /* '' */
 }
 
 .typcn-volume:before {
-  content: '\e135';
+  content: "\e135";
   /* '' */
 }
 
 .typcn-warning-outline:before {
-  content: '\e136';
+  content: "\e136";
   /* '' */
 }
 
 .typcn-warning:before {
-  content: '\e137';
+  content: "\e137";
   /* '' */
 }
 
 .typcn-watch:before {
-  content: '\e138';
+  content: "\e138";
   /* '' */
 }
 
 .typcn-waves-outline:before {
-  content: '\e139';
+  content: "\e139";
   /* '' */
 }
 
 .typcn-waves:before {
-  content: '\e13a';
+  content: "\e13a";
   /* '' */
 }
 
 .typcn-weather-cloudy:before {
-  content: '\e13b';
+  content: "\e13b";
   /* '' */
 }
 
 .typcn-weather-downpour:before {
-  content: '\e13c';
+  content: "\e13c";
   /* '' */
 }
 
 .typcn-weather-night:before {
-  content: '\e13d';
+  content: "\e13d";
   /* '' */
 }
 
 .typcn-weather-partly-sunny:before {
-  content: '\e13e';
+  content: "\e13e";
   /* '' */
 }
 
 .typcn-weather-shower:before {
-  content: '\e13f';
+  content: "\e13f";
   /* '' */
 }
 
 .typcn-weather-snow:before {
-  content: '\e140';
+  content: "\e140";
   /* '' */
 }
 
 .typcn-weather-stormy:before {
-  content: '\e141';
+  content: "\e141";
   /* '' */
 }
 
 .typcn-weather-sunny:before {
-  content: '\e142';
+  content: "\e142";
   /* '' */
 }
 
 .typcn-weather-windy-cloudy:before {
-  content: '\e143';
+  content: "\e143";
   /* '' */
 }
 
 .typcn-weather-windy:before {
-  content: '\e144';
+  content: "\e144";
   /* '' */
 }
 
 .typcn-wi-fi-outline:before {
-  content: '\e145';
+  content: "\e145";
   /* '' */
 }
 
 .typcn-wi-fi:before {
-  content: '\e146';
+  content: "\e146";
   /* '' */
 }
 
 .typcn-wine:before {
-  content: '\e147';
+  content: "\e147";
   /* '' */
 }
 
 .typcn-world-outline:before {
-  content: '\e148';
+  content: "\e148";
   /* '' */
 }
 
 .typcn-world:before {
-  content: '\e149';
+  content: "\e149";
   /* '' */
 }
 
 .typcn-zoom-in-outline:before {
-  content: '\e14a';
+  content: "\e14a";
   /* '' */
 }
 
 .typcn-zoom-in:before {
-  content: '\e14b';
+  content: "\e14b";
   /* '' */
 }
 
 .typcn-zoom-out-outline:before {
-  content: '\e14c';
+  content: "\e14c";
   /* '' */
 }
 
 .typcn-zoom-out:before {
-  content: '\e14d';
+  content: "\e14d";
   /* '' */
 }
 
 .typcn-zoom-outline:before {
-  content: '\e14e';
+  content: "\e14e";
   /* '' */
 }
 
 .typcn-zoom:before {
-  content: '\e14f';
+  content: "\e14f";
   /* '' */
 }
 
 @font-face {
-  font-family: 'themify';
+  font-family: "themify";
   src: url("../fonts/themify.eot?-fvbane");
-  src: url("../fonts/themify.eot?#iefix-fvbane") format("embedded-opentype"), url("../fonts/themify.woff?-fvbane") format("woff"), url("../fonts/themify.ttf?-fvbane") format("truetype"), url("../fonts/themify.svg?-fvbane#themify") format("svg");
+  src: url("../fonts/themify.eot?#iefix-fvbane") format("embedded-opentype"),
+    url("../fonts/themify.woff?-fvbane") format("woff"),
+    url("../fonts/themify.ttf?-fvbane") format("truetype"),
+    url("../fonts/themify.svg?-fvbane#themify") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="ti-"], [class*=" ti-"] {
-  font-family: 'themify';
+[class^="ti-"],
+[class*=" ti-"] {
+  font-family: "themify";
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -26615,7 +27346,10 @@ readers do not read off random characters that represent icons */
 @font-face {
   font-family: "dripicons-v2";
   src: url("../fonts/dripicons-v2.eot");
-  src: url("../fonts/dripicons-v2.eot?#iefix") format("embedded-opentype"), url("../fonts/dripicons-v2.woff") format("woff"), url("../fonts/dripicons-v2.ttf") format("truetype"), url("../fonts/dripicons-v2.svg#dripicons-v2") format("svg");
+  src: url("../fonts/dripicons-v2.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/dripicons-v2.woff") format("woff"),
+    url("../fonts/dripicons-v2.ttf") format("truetype"),
+    url("../fonts/dripicons-v2.svg#dripicons-v2") format("svg");
   font-weight: normal;
   font-style: normal;
 }

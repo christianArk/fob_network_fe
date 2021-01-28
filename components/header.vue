@@ -265,15 +265,15 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import User from '../models/User.ts';
+import Vue from "vue";
+import User from "../models/User.ts";
 
 export default Vue.extend({
-  name: 'Header',
+  name: "Header",
 
   data() {
     return {
-      title: 'My Header File',
+      title: "My Header File",
       user: {} as User,
     };
   },
@@ -295,7 +295,7 @@ export default Vue.extend({
       // const totalAmount = 10;
       // const sumTotal = 5;
       // const total = totalAmount + sumTotal;
-      const firstname = 'Christian';
+      const firstname = "Christian";
       const name = `Onyeneke ${firstname}`;
       return name;
     },

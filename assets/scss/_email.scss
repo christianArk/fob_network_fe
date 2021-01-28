@@ -13,7 +13,7 @@
   margin-left: 260px;
 }
 
-.dot-online{
+.dot-online {
   position: absolute;
   left: 28px;
   font-size: 12px;
@@ -30,20 +30,19 @@
   }
 }
 
-.email-file{
-  .email-icon{
+.email-file {
+  .email-icon {
     display: inline-block;
     width: 70px;
     height: 70px;
     line-height: 70px;
     border-radius: 50%;
     text-align: center;
-    i{
-     font-size: 30px;
-     color: $white;
+    i {
+      font-size: 30px;
+      color: $white;
     }
   }
- 
 }
 
 @media (max-width: 767px) {
@@ -56,11 +55,10 @@
   }
 }
 
-
 .mail-list {
   a {
     display: block;
-    color: lighten($dark,5%);
+    color: lighten($dark, 5%);
     line-height: 28px;
     padding: 5px;
   }
@@ -79,15 +77,15 @@
     height: 70px;
     line-height: 70px;
     cursor: default;
-    transition-duration: .3s;
+    transition-duration: 0.3s;
 
-    a{
+    a {
       color: $dark;
     }
 
     &:hover {
       background: $light;
-      transition-duration: .05s;
+      transition-duration: 0.05s;
     }
 
     .col-mail {
@@ -134,7 +132,7 @@
         overflow: hidden;
         white-space: nowrap;
         margin-bottom: 0;
-        span{
+        span {
           position: relative;
           top: -3px;
         }
@@ -169,14 +167,12 @@
         padding-left: 90px;
       }
     }
-
   }
 
   li.active,
   li.active:hover {
     box-shadow: inset 3px 0 0 $primary;
   }
-
 
   .checkbox-wrapper-mail {
     cursor: pointer;
@@ -203,14 +199,14 @@
       cursor: pointer;
       opacity: 0;
       margin-bottom: 0;
-      transition-duration: .05s;
+      transition-duration: 0.05s;
       top: 0;
       &:before {
         content: "\F12C";
         font-family: "Material Design Icons";
         top: 0;
         height: 20px;
-        color: darken($dark,5%);
+        color: darken($dark, 5%);
         width: 20px;
         position: absolute;
         margin-top: -25px;
@@ -221,10 +217,9 @@
   }
 }
 
-
 // Email-inbox
 
-.email-inbox{
+.email-inbox {
   position: relative;
   .form-control,
   .form-control:focus {
@@ -251,75 +246,69 @@
   }
 }
 
-
 @media (max-width: 425px) {
   .title {
-    img{
+    img {
       display: none;
     }
   }
 }
 
-
 //-------  EMAIL-READ ---------
 
-
-
-.email-img-overlay{
+.email-img-overlay {
   .email-overlay {
-      i {
-          background: $primary;
-          color: $white;
-          font-size: 20px;
-          border-radius: 50%;
-          height: 40px;
-          width: 40px;
-          line-height: 40px;
-          transition: all 0.5s;
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          text-align: center;
-          left: 0;
-          right: 0px;
-          margin: 0 auto;
-          opacity: 0;
-      }
+    i {
+      background: $primary;
+      color: $white;
+      font-size: 20px;
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+      transition: all 0.5s;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      left: 0;
+      right: 0px;
+      margin: 0 auto;
+      opacity: 0;
+    }
   }
   &:hover {
-    img{
+    img {
       opacity: 0.2;
     }
-      .email-overlay {
-          i {
-              opacity: 1
-          }
+    .email-overlay {
+      i {
+        opacity: 1;
       }
+    }
   }
 }
 
-
-
 @media (max-width: 375px) {
-.date{
-  display: none;
-}
+  .date {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   .mo-mb-2 {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
   }
-  
+
   .mo-mt-2 {
-  margin-top: 10px !important;
+    margin-top: 10px !important;
   }
-  .ex-pages{
+  .ex-pages {
     padding: 24px 0px;
   }
-  .btn-toolbar{
+  .btn-toolbar {
     margin-top: 15px;
   }
-  .noti-msg{
+  .noti-msg {
     display: none;
   }
 }
