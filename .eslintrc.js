@@ -18,6 +18,5 @@ module.exports = {
   ],
   rules: {
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
-    quotes: [2, 'single', { avoidEscape: true }],
   },
 };
