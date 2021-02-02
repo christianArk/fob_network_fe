@@ -4,14 +4,15 @@
 
     <!-- Begin page -->
     <div class="home-btn d-none d-sm-block">
-        <nuxt-link to="/" class="text-white"><i class="mdi mdi-home h1"></i></nuxt-link>
+      <nuxt-link to="/" class="text-white"
+        ><i class="mdi mdi-home h1"></i
+      ></nuxt-link>
     </div>
 
     <div class="wrapper-page">
-
-        <div class="container">
-          <Nuxt/>
-        </div>
+      <div class="container">
+        <Nuxt />
+      </div>
     </div>
   </div>
 </template>
@@ -25,8 +26,7 @@ export default Vue.extend({
       return new Date().getFullYear();
     },
   },
-  mounted() {
-  },
+  mounted() {},
   updated() {},
 });
 </script>
