@@ -5580,11 +5580,7 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: normal;
   src: url("../fonts/fa-brands-400.eot");
-  src: url("../fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/fa-brands-400.woff2") format("woff2"),
-    url("../fonts/fa-brands-400.woff") format("woff"),
-    url("../fonts/fa-brands-400.ttf") format("truetype"),
-    url("../fonts/fa-brands-400.svg#fontawesome") format("svg");
+  src: url("../fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-brands-400.woff2") format("woff2"), url("../fonts/fa-brands-400.woff") format("woff"), url("../fonts/fa-brands-400.ttf") format("truetype"), url("../fonts/fa-brands-400.svg#fontawesome") format("svg");
 }
 
 .fab {
@@ -5596,11 +5592,7 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/fa-regular-400.eot");
-  src: url("../fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/fa-regular-400.woff2") format("woff2"),
-    url("../fonts/fa-regular-400.woff") format("woff"),
-    url("../fonts/fa-regular-400.ttf") format("truetype"),
-    url("../fonts/fa-regular-400.svg#fontawesome") format("svg");
+  src: url("../fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-regular-400.woff2") format("woff2"), url("../fonts/fa-regular-400.woff") format("woff"), url("../fonts/fa-regular-400.ttf") format("truetype"), url("../fonts/fa-regular-400.svg#fontawesome") format("svg");
 }
 
 .far {
@@ -5613,11 +5605,7 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   src: url("../fonts/fa-solid-900.eot");
-  src: url("../fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/fa-solid-900.woff2") format("woff2"),
-    url("../fonts/fa-solid-900.woff") format("woff"),
-    url("../fonts/fa-solid-900.ttf") format("truetype"),
-    url("../fonts/fa-solid-900.svg#fontawesome") format("svg");
+  src: url("../fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-solid-900.woff2") format("woff2"), url("../fonts/fa-solid-900.woff") format("woff"), url("../fonts/fa-solid-900.ttf") format("truetype"), url("../fonts/fa-solid-900.svg#fontawesome") format("svg");
 }
 
 .fa,
@@ -5630,13 +5618,7 @@ readers do not read off random characters that represent icons */
 @font-face {
   font-family: "Material Design Icons";
   src: url("../fonts/materialdesignicons-webfont.eot?v=3.6.95");
-  src: url("../fonts/materialdesignicons-webfont.eot?#iefix&v=3.6.95")
-      format("embedded-opentype"),
-    url("../fonts/materialdesignicons-webfont.woff2?v=3.6.95") format("woff2"),
-    url("../fonts/materialdesignicons-webfont.woff?v=3.6.95") format("woff"),
-    url("../fonts/materialdesignicons-webfont.ttf?v=3.6.95") format("truetype"),
-    url("../fonts/materialdesignicons-webfont.svg?v=3.6.95#materialdesigniconsregular")
-      format("svg");
+  src: url("../fonts/materialdesignicons-webfont.eot?#iefix&v=3.6.95") format("embedded-opentype"), url("../fonts/materialdesignicons-webfont.woff2?v=3.6.95") format("woff2"), url("../fonts/materialdesignicons-webfont.woff?v=3.6.95") format("woff"), url("../fonts/materialdesignicons-webfont.ttf?v=3.6.95") format("truetype"), url("../fonts/materialdesignicons-webfont.svg?v=3.6.95#materialdesigniconsregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -20645,7 +20627,7 @@ readers do not read off random characters that represent icons */
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   -webkit-filter: FlipH;
-  filter: FlipH;
+          filter: FlipH;
   -ms-filter: "FlipH";
 }
 
@@ -20653,7 +20635,7 @@ readers do not read off random characters that represent icons */
   -webkit-transform: scaleY(-1);
   transform: scaleY(-1);
   -webkit-filter: FlipV;
-  filter: FlipV;
+          filter: FlipV;
   -ms-filter: "FlipV";
 }
 
@@ -20697,11 +20679,7 @@ readers do not read off random characters that represent icons */
 @font-face {
   font-family: "Ionicons";
   src: url("../fonts/ionicons.eot?v=4.1.1");
-  src: url("../fonts/ionicons.eot?v=4.1.1#iefix") format("embedded-opentype"),
-    url("../fonts/ionicons.woff2?v=4.1.1") format("woff2"),
-    url("../fonts/ionicons.woff?v=4.1.1") format("woff"),
-    url("../fonts/ionicons.ttf?v=4.1.1") format("truetype"),
-    url("../fonts/ionicons.svg?v=4.1.1#Ionicons") format("svg");
+  src: url("../fonts/ionicons.eot?v=4.1.1#iefix") format("embedded-opentype"), url("../fonts/ionicons.woff2?v=4.1.1") format("woff2"), url("../fonts/ionicons.woff?v=4.1.1") format("woff"), url("../fonts/ionicons.ttf?v=4.1.1") format("truetype"), url("../fonts/ionicons.svg?v=4.1.1#Ionicons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -24206,10 +24184,7 @@ readers do not read off random characters that represent icons */
   font-weight: normal;
   font-style: normal;
   src: url("../fonts/typicons.eot");
-  src: url("../fonts/typicons.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/typicons.woff") format("woff"),
-    url("../fonts/typicons.ttf") format("truetype"),
-    url("../fonts/typicons.svg#typicons") format("svg");
+  src: url("../fonts/typicons.eot?#iefix") format("embedded-opentype"), url("../fonts/typicons.woff") format("woff"), url("../fonts/typicons.ttf") format("truetype"), url("../fonts/typicons.svg#typicons") format("svg");
 }
 
 /* :before psuedo-selector inserts and styles icon */
@@ -25913,10 +25888,7 @@ readers do not read off random characters that represent icons */
 @font-face {
   font-family: "themify";
   src: url("../fonts/themify.eot?-fvbane");
-  src: url("../fonts/themify.eot?#iefix-fvbane") format("embedded-opentype"),
-    url("../fonts/themify.woff?-fvbane") format("woff"),
-    url("../fonts/themify.ttf?-fvbane") format("truetype"),
-    url("../fonts/themify.svg?-fvbane#themify") format("svg");
+  src: url("../fonts/themify.eot?#iefix-fvbane") format("embedded-opentype"), url("../fonts/themify.woff?-fvbane") format("woff"), url("../fonts/themify.ttf?-fvbane") format("truetype"), url("../fonts/themify.svg?-fvbane#themify") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -27346,10 +27318,7 @@ readers do not read off random characters that represent icons */
 @font-face {
   font-family: "dripicons-v2";
   src: url("../fonts/dripicons-v2.eot");
-  src: url("../fonts/dripicons-v2.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/dripicons-v2.woff") format("woff"),
-    url("../fonts/dripicons-v2.ttf") format("truetype"),
-    url("../fonts/dripicons-v2.svg#dripicons-v2") format("svg");
+  src: url("../fonts/dripicons-v2.eot?#iefix") format("embedded-opentype"), url("../fonts/dripicons-v2.woff") format("woff"), url("../fonts/dripicons-v2.ttf") format("truetype"), url("../fonts/dripicons-v2.svg#dripicons-v2") format("svg");
   font-weight: normal;
   font-style: normal;
 }

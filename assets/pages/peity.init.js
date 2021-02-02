@@ -1,4 +1,3 @@
-
 /*
  Template Name: Zegva - Responsive Bootstrap 4 Admin Dashboard
  Author: Themesdesign
@@ -6,7 +5,6 @@
  File:  Peity init js
  */
 
-
-$('.peity-line').each(function() {
-    $(this).peity("line", $(this).data());
+$(".peity-line").each(function () {
+  $(this).peity("line", $(this).data());
 });

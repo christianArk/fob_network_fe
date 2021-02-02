@@ -15,10 +15,10 @@
   color: $primary;
   background-color: rgba($primary, 0.15);
   .alert-link {
-    color: darken($primary,10%);
+    color: darken($primary, 10%);
   }
   hr {
-    border-top-color: darken($primary,10%);
+    border-top-color: darken($primary, 10%);
   }
 }
 
@@ -26,10 +26,10 @@
   color: $success;
   background-color: rgba($success, 0.15);
   .alert-link {
-    color: darken($success,10%);
+    color: darken($success, 10%);
   }
   hr {
-    border-top-color: darken($success,10%);
+    border-top-color: darken($success, 10%);
   }
 }
 
@@ -37,10 +37,10 @@
   color: $danger;
   background-color: rgba($danger, 0.15);
   .alert-link {
-    color: darken($danger,10%);
+    color: darken($danger, 10%);
   }
   hr {
-    border-top-color: darken($danger,10%);
+    border-top-color: darken($danger, 10%);
   }
 }
 
@@ -48,7 +48,7 @@
   color: $warning;
   background-color: rgba($warning, 0.15);
   .alert-link {
-    color: darken($warning,10%);
+    color: darken($warning, 10%);
   }
   hr {
     border-top-color: darken($warning, 10%);
@@ -59,10 +59,10 @@
   color: $info;
   background-color: rgba($info, 0.15);
   .alert-link {
-    color: darken($info,10%);
+    color: darken($info, 10%);
   }
   hr {
-    border-top-color: darken($info,10%);
+    border-top-color: darken($info, 10%);
   }
 }
 
@@ -70,10 +70,10 @@
   color: $secondary;
   background-color: rgba($secondary, 0.15);
   .alert-link {
-    color: darken($secondary,10%);
+    color: darken($secondary, 10%);
   }
   hr {
-    border-top-color: darken($secondary,10%);
+    border-top-color: darken($secondary, 10%);
   }
 }
 
@@ -81,9 +81,9 @@
   color: $dark;
   background-color: rgba($dark, 0.15);
   .alert-link {
-    color: darken($dark,10%);
+    color: darken($dark, 10%);
   }
   hr {
-    border-top-color: darken($dark,10%);
+    border-top-color: darken($dark, 10%);
   }
 }

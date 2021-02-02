@@ -14,11 +14,11 @@ label {
   }
 }
 
-.custom-control-input:checked~.custom-control-indicator {
+.custom-control-input:checked ~ .custom-control-indicator {
   background-color: $primary;
 }
 
-.custom-control-input:focus~.custom-control-indicator {
+.custom-control-input:focus ~ .custom-control-indicator {
   -webkit-box-shadow: 0 0 0 1px $white, 0 0 0 3px $primary;
   box-shadow: 0 0 0 1px $white, 0 0 0 3px $primary;
 }
@@ -49,6 +49,6 @@ label {
   border: 1px solid $light;
 }
 
-.input-group-text{
+.input-group-text {
   font-size: 13px;
 }

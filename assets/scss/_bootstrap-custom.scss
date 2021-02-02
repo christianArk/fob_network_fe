@@ -13,15 +13,17 @@
 }
 .dropdown-item {
   background-color: $white;
-  padding: .4rem 1rem;
-  
-  &:active,&:hover {
+  padding: 0.4rem 1rem;
+
+  &:active,
+  &:hover {
     background-color: $gray-100;
     color: $dark;
   }
 }
 
-.dropdown-item.active, .dropdown-item:active {
+.dropdown-item.active,
+.dropdown-item:active {
   background-color: $gray-100;
   color: $dark;
 }
@@ -35,7 +37,7 @@
   -webkit-transition: all 300ms ease;
   -o-transition: all 300ms ease;
   -ms-transition: all 300ms ease;
-  margin-top: 20px!important;
+  margin-top: 20px !important;
 }
 .show > .dropdown-menu {
   visibility: visible;
@@ -43,11 +45,11 @@
   margin-top: 0px !important;
 }
 
-.breadcrumb>li+li:before {
+.breadcrumb > li + li:before {
   padding: 0 5px;
   color: $muted;
   content: "\f105" !important;
-  font-family: 'Font Awesome 5 Free';
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
 
@@ -165,11 +167,9 @@
   color: $secondary !important;
 }
 
-
-
 // border
 
-.border-primary{
+.border-primary {
   border-color: $primary !important;
 }
 
@@ -189,11 +189,11 @@
   border-color: $danger !important;
 }
 
-.border-dark{
+.border-dark {
   border-color: $dark !important;
 }
 
-.border-secondary{
+.border-secondary {
   border-color: $secondary !important;
 }
 
@@ -205,18 +205,18 @@ dt {
 
 // spinner
 
-.bs-spinner{
-  .spinner-border, .spinner-grow {
+.bs-spinner {
+  .spinner-border,
+  .spinner-grow {
     margin-right: 8px;
-    margin-top: 10px
+    margin-top: 10px;
   }
 }
 
-
 // checkbox
 
-.custom-control-input{
-  &:checked~.custom-control-label{
+.custom-control-input {
+  &:checked ~ .custom-control-label {
     &:before {
       border-color: $primary;
       background-color: $primary;
@@ -224,13 +224,12 @@ dt {
   }
 }
 
-
 /* Navs & Tabs */
-.nav-pills .nav-item.show .nav-link, .nav-pills .nav-link.active {
+.nav-pills .nav-item.show .nav-link,
+.nav-pills .nav-link.active {
   background-color: $primary;
 }
 
 .nav-pills > .active > a > .badge {
   color: $primary;
 }
-

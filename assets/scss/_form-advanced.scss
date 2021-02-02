@@ -7,20 +7,28 @@
   padding: 8px;
 }
 
-.datepicker table tr td.active, .datepicker table tr td.active:hover, .datepicker table tr td.active.disabled,
-.datepicker table tr td.active.disabled:hover,.datepicker table tr td.today, .datepicker table tr td.today.disabled,
-.datepicker table tr td.today.disabled:hover, .datepicker table tr td.today:hover,.datepicker table tr td.selected,
-.datepicker table tr td.selected.disabled, .datepicker table tr td.selected.disabled:hover,
-.datepicker table tr td.selected:hover  {
+.datepicker table tr td.active,
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active.disabled,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.today,
+.datepicker table tr td.today.disabled,
+.datepicker table tr td.today.disabled:hover,
+.datepicker table tr td.today:hover,
+.datepicker table tr td.selected,
+.datepicker table tr td.selected.disabled,
+.datepicker table tr td.selected.disabled:hover,
+.datepicker table tr td.selected:hover {
   background-color: $primary !important;
   background-image: none;
   box-shadow: none;
   color: $white;
 }
 
-.table-condensed{
-  thead th, tbody td{
-      padding: 5px;
+.table-condensed {
+  thead th,
+  tbody td {
+    padding: 5px;
   }
 }
 
@@ -33,7 +41,7 @@
   left: 8px;
 }
 .input-group-addon {
-  padding: .375rem .75rem;
+  padding: 0.375rem 0.75rem;
   margin-bottom: 0;
   font-size: 1rem;
   font-weight: 400;
@@ -46,7 +54,8 @@
 }
 
 /* Prism */
-:not(pre) > code[class*="language-"], pre[class*="language-"] {
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
   background: $light;
 }
 
@@ -54,4 +63,3 @@
 .badge:empty {
   padding: 0;
 }
-

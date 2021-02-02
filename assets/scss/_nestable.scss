@@ -72,7 +72,8 @@
   height: auto;
 }
 
-.dd-placeholder, .dd-empty {
+.dd-placeholder,
+.dd-empty {
   background: $gray-300;
   border: 1px dashed $muted;
 }
