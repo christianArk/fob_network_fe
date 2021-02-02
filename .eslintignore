@@ -1,0 +1,5 @@
+test/
+assets/
+static/
+.nuxt.config.js
+tsconfig.json
