@@ -269,14 +269,14 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import Vue from 'vue';
 
 export default Vue.extend({
-  name: "Header",
+  name: 'Header',
 
   data() {
     return {
-      title: "My Header File",
+      title: 'My Header File',
       isLoggedOut: false as boolean,
     };
   },
@@ -286,11 +286,11 @@ export default Vue.extend({
   methods: {
     async logout() {
       this.$store
-        .dispatch("logout")
+        .dispatch('logout')
         .then(() => {
           this.isLoggedOut = true;
-          this.$store.commit("LOGOUT");
-          this.$router.push("login");
+          this.$store.commit('LOGOUT');
+          this.$router.push('login');
         })
         .catch();
     },

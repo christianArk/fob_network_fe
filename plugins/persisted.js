@@ -1,7 +1,7 @@
-import createPersistedState from "vuex-persistedstate";
+import createPersistedState from 'vuex-persistedstate';
 
 export default ({ store }) => {
   createPersistedState({
-    key: "mevron_administrator",
+    key: 'mevron_administrator',
   })(store);
 };

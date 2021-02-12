@@ -71,21 +71,21 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import Vue from 'vue';
 
 export default Vue.extend({
-  layout: "auth",
+  layout: 'auth',
   data() {
     return {
       isLoading: false as boolean,
       user: {
-        email: "",
+        email: '',
       },
     };
   },
   computed: {
     emailSet(): boolean {
-      return this.user.email !== "";
+      return this.user.email !== '';
     },
   },
   mounted() {},
@@ -93,9 +93,9 @@ export default Vue.extend({
     async sendResetEmail() {
       this.isLoading = true;
       await this.$store
-        .dispatch("forgotPassword", this.user)
+        .dispatch('forgotPassword', this.user)
         .then(() => {
-          this.$router.push("/");
+          this.$router.push('/');
         })
         .catch((err: any) => {
           this.isLoading = false;

@@ -1,4 +1,4 @@
-import { LOGIN, FORGOT_PASSWORD, LOGOUT } from "../utils/routes";
+import { LOGIN, FORGOT_PASSWORD, LOGOUT } from '../utils/routes';
 
 export const strict = false;
 
@@ -12,7 +12,7 @@ export const actions = {
     return this.$axios
       .post(LOGIN, payload)
       .then((res) => {
-        commit("SET_AUTH", res.data.user);
+        commit('SET_AUTH', res.data.user);
         return res;
       })
       .catch((error) => error);
@@ -22,7 +22,7 @@ export const actions = {
     return this.$axios
       .post(LOGOUT)
       .then((res) => {
-        commit("UNSET_AUTH");
+        commit('UNSET_AUTH');
         return res;
       })
       .catch((error) => error);
@@ -32,7 +32,7 @@ export const actions = {
     return this.$axios
       .post(FORGOT_PASSWORD, payload)
       .then((res) => {
-        commit("SET_AUTH", res.data.user);
+        commit('SET_AUTH', res.data.user);
         return res;
       })
       .catch((error) => error);

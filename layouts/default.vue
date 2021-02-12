@@ -22,14 +22,14 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import Header from "../components/header.vue";
-import Sidebar from "../components/sidebar.vue";
+import Vue from 'vue';
+import Header from '../components/header.vue';
+import Sidebar from '../components/sidebar.vue';
 
 declare let $: any;
 
 export default Vue.extend({
-  middleware: "auth",
+  middleware: 'auth',
   components: {
     Header,
     Sidebar,
@@ -40,7 +40,7 @@ export default Vue.extend({
     },
   },
   mounted() {
-    $("#side-menu").metisMenu();
+    $('#side-menu').metisMenu();
   },
   updated() {},
 });
