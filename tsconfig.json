@@ -15,7 +15,7 @@
       "~/*": ["./*"],
       "@/*": ["./*"]
     },
-    "types": ["@nuxt/types", "@types/node", "@types/jquery"]
+    "types": ["@nuxt/types", "@types/node", "@nuxtjs/axios", "@nuxtjs/auth-next"]
   },
   "exclude": ["node_modules", ".nuxt", "dist"]
 }

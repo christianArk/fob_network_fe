@@ -244,7 +244,7 @@
                 ><i class="mdi mdi-lock-open-outline"></i> Lock screen</a
               >
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item text-danger" href="#"
+              <a class="dropdown-item text-danger" id="logout-btn" href="#" @click.prevent="logout"
                 ><i class="mdi mdi-power text-danger"></i> Logout</a
               >
             </div>
@@ -266,7 +266,6 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import User from '../models/User.ts';
 
 export default Vue.extend({
   name: 'Header',
@@ -274,30 +273,20 @@ export default Vue.extend({
   data() {
     return {
       title: 'My Header File',
-      user: {} as User,
+      isLoggedOut: false as boolean,
     };
   },
 
   computed: {
-    fullname(): string {
-      return `${this.user.firstname} ${this.user.lastname}`;
-    },
   },
 
   methods: {
-    sumNumbers(a: number, b: number): number {
-      return a + b;
-    },
-    computeSum(): number {
-      return this.sumNumbers(5, 6);
-    },
-    caculateRatio() {
-      // const totalAmount = 10;
-      // const sumTotal = 5;
-      // const total = totalAmount + sumTotal;
-      const firstname = 'Christian';
-      const name = `Onyeneke ${firstname}`;
-      return name;
+    async logout() {
+      this.$store.dispatch('logout').then(() => {
+        this.isLoggedOut = true;
+        this.$store.commit('LOGOUT');
+        this.$router.push('login');
+      }).catch();
     },
   },
 });

@@ -29,6 +29,7 @@ import Sidebar from '../components/sidebar.vue';
 declare let $: any;
 
 export default Vue.extend({
+  middleware: 'auth',
   components: {
     Header,
     Sidebar,

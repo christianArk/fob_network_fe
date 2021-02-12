@@ -13,7 +13,7 @@
               />
             </nuxt-link>
             <p class="text-muted w-75 mx-auto mb-4 mt-4 info">
-              Enter your email address and password to access admin panel.
+              Enter your email address.
             </p>
           </div>
 
@@ -32,50 +32,19 @@
               </div>
             </div>
 
-            <div class="form-group">
-              <div class="col-12">
-                <label for="password">Password</label>
-                <input
-                  v-model="user.password"
-                  class="form-control"
-                  type="password"
-                  required=""
-                  id="password"
-                  placeholder="Password"
-                />
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="col-12">
-                <div class="checkbox checkbox-primary">
-                  <div class="custom-control custom-checkbox">
-                    <input
-                      type="checkbox"
-                      class="custom-control-input"
-                      id="customCheck1"
-                    />
-                    <label class="custom-control-label" for="customCheck1">
-                      Remember me</label
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <div class="form-group text-center mt-3">
               <div class="col-12">
                 <button
                   v-if="!isLoading"
                   class="btn btn-black btn-block waves-effect waves-light"
                   type="submit"
-                  @click.prevent="login()"
-                  :disabled="!emailAndPasswordSet"
+                  @click.prevent="sendResetEmail()"
+                  :disabled="!emailSet"
                 >
-                  Log In
+                  Send Reset Email
                 </button>
                 <button
-                  v-else
+                  v-if="isLoading"
                   class="btn btn-black btn-block waves-effect waves-light"
                   disabled
                 >
@@ -87,16 +56,10 @@
             <div class="form-group text-center mt-4">
               <div class="col-12">
                 <div class="float-left">
-                  <nuxt-link to="/forgot-password" class="text-muted">
-                    <i class="fa fa-lock mr-1"></i> Forgot your
-                    password?</nuxt-link
+                  <nuxt-link to="/login" class="text-muted">
+                    <i class="fa fa-lock mr-1"></i> Remember now?</nuxt-link
                   >
                 </div>
-                <!-- <div class="text-right">
-                  <nuxt-link to="/sign-up" class="text-muted">
-                    Create an account</nuxt-link
-                  >
-                </div> -->
               </div>
             </div>
           </form>
@@ -117,21 +80,20 @@ export default Vue.extend({
       isLoading: false as boolean,
       user: {
         email: '',
-        password: '',
       },
     };
   },
   computed: {
-    emailAndPasswordSet(): boolean {
-      return (this.user.email !== '' && this.user.password !== '');
+    emailSet(): boolean {
+      return (this.user.email !== '');
     },
   },
   mounted() {
   },
   methods: {
-    async login() {
+    async sendResetEmail() {
       this.isLoading = true;
-      await this.$store.dispatch('login', this.user).then(() => {
+      await this.$store.dispatch('forgotPassword', this.user).then(() => {
         this.$router.push('/');
       }).catch((err: any) => {
         this.isLoading = false;

@@ -1,5 +1,5 @@
 import { shallowMount, createLocalVue } from "@vue/test-utils";
-import Login from "@/pages/login.vue";
+import ForgotPassword from "@/pages/forgot-password.vue";
 import VueRouter from 'vue-router'
 import axios from 'axios'
 import flushPromises from 'flush-promises'
@@ -25,7 +25,7 @@ describe("Login", () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallowMount(Login, {
+    wrapper = shallowMount(ForgotPassword, {
       methods: {},
       localVue,
       router,
@@ -43,38 +43,33 @@ describe("Login", () => {
     expect(wrapper.vm).toBeTruthy();
   });
 
-  it("should contain Enter your email address and password to access admin panel.", () => {
+  it("should contain Enter your email address.", () => {
     expect(wrapper.find("p.info").text()).toBe(
-      "Enter your email address and password to access admin panel."
+      "Enter your email address."
     );
   });
 
-  it("button should be disabled if email and password is empty", () => {
+  it("button should be disabled if email is empty", () => {
     let email = wrapper.vm.$data.user.email;
-    let password = wrapper.vm.$data.user.password;
-    if (email.length === 0 && password.length === 0) {
+    if (email.length === 0) {
       expect(wrapper.find("button").attributes("disabled")).toBe("disabled");
     } else {
       expect(wrapper.find("button").attributes("disabled")).toBe(undefined);
     }
   });
 
-  it("button should disabled when submitted, loader should appear and should redirect to dashboard", async () => {
+  it("button should disabled when submitted, loader should appear and should redirect to password reset page", async () => {
     wrapper.vm.$data.user.email = "chris@gmail.com";
-    wrapper.vm.$data.user.password = "chris123";
     let button = wrapper.find('button');
-    console.log(wrapper.vm.emailAndPasswordSet, wrapper.find("button").attributes("disabled"))
     button.trigger('click').then(() => {
       expect(wrapper.vm.$data.isLoading).toBe(true)
       expect(wrapper.find("button").attributes("disabled")).toBe("disabled");
       expect(wrapper.find("button").text()).toBe('<i class="fas fa-circle-notch fa-spin"></i>');
-      expect(axios.post).toHaveBeenCalledTimes(1)
-      expect(axios.post).toHaveBeenCalledWith('login')
     })
     
     await flushPromises()
 
-    expect(wrapper.vm.$router.currentRoute.path).toBe('/')
+    expect(wrapper.vm.$router.currentRoute.path).toBe('/forgot-password')
   });
 
 });
