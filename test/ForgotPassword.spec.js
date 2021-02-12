@@ -1,25 +1,27 @@
 import { shallowMount, createLocalVue } from "@vue/test-utils";
 import ForgotPassword from "@/pages/forgot-password.vue";
-import VueRouter from 'vue-router'
-import axios from 'axios'
-import flushPromises from 'flush-promises'
+import VueRouter from "vue-router";
+import axios from "axios";
+import flushPromises from "flush-promises";
 
-const localVue = createLocalVue()
-localVue.use(VueRouter)
-const router = new VueRouter()
+const localVue = createLocalVue();
+localVue.use(VueRouter);
+const router = new VueRouter();
 
 const transitionStub = () => ({
-  render: function(h) {
-    return this.$options._renderChildren
-  }
-})
+  render: function (h) {
+    return this.$options._renderChildren;
+  },
+});
 
-jest.mock('axios', () => ({
+jest.mock("axios", () => ({
   get: jest.fn(() => {}),
   post: jest.fn(() => {
-     return new Promise((resolve, reject) => { resolve('ok')}).catch()
-   }),
-}))
+    return new Promise((resolve, reject) => {
+      resolve("ok");
+    }).catch();
+  }),
+}));
 
 describe("Login", () => {
   let wrapper;
@@ -30,11 +32,11 @@ describe("Login", () => {
       localVue,
       router,
       mocks: {
-        $axios: axios
+        $axios: axios,
       },
       stubs: {
         NuxtLink: true,
-        transition: transitionStub()
+        transition: transitionStub(),
       },
     });
   });
@@ -44,9 +46,7 @@ describe("Login", () => {
   });
 
   it("should contain Enter your email address.", () => {
-    expect(wrapper.find("p.info").text()).toBe(
-      "Enter your email address."
-    );
+    expect(wrapper.find("p.info").text()).toBe("Enter your email address.");
   });
 
   it("button should be disabled if email is empty", () => {
@@ -60,16 +60,17 @@ describe("Login", () => {
 
   it("button should disabled when submitted, loader should appear and should redirect to password reset page", async () => {
     wrapper.vm.$data.user.email = "chris@gmail.com";
-    let button = wrapper.find('button');
-    button.trigger('click').then(() => {
-      expect(wrapper.vm.$data.isLoading).toBe(true)
+    let button = wrapper.find("button");
+    button.trigger("click").then(() => {
+      expect(wrapper.vm.$data.isLoading).toBe(true);
       expect(wrapper.find("button").attributes("disabled")).toBe("disabled");
-      expect(wrapper.find("button").text()).toBe('<i class="fas fa-circle-notch fa-spin"></i>');
-    })
-    
-    await flushPromises()
+      expect(wrapper.find("button").text()).toBe(
+        '<i class="fas fa-circle-notch fa-spin"></i>'
+      );
+    });
 
-    expect(wrapper.vm.$router.currentRoute.path).toBe('/forgot-password')
+    await flushPromises();
+
+    expect(wrapper.vm.$router.currentRoute.path).toBe("/forgot-password");
   });
-
 });

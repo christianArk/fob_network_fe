@@ -108,35 +108,37 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
+import Vue from "vue";
 
 export default Vue.extend({
-  layout: 'auth',
+  layout: "auth",
   data() {
     return {
       isLoading: false as boolean,
       user: {
-        email: '',
-        password: '',
+        email: "",
+        password: "",
       },
     };
   },
   computed: {
     emailAndPasswordSet(): boolean {
-      return (this.user.email !== '' && this.user.password !== '');
+      return this.user.email !== "" && this.user.password !== "";
     },
   },
-  mounted() {
-  },
+  mounted() {},
   methods: {
     async login() {
       this.isLoading = true;
-      await this.$store.dispatch('login', this.user).then(() => {
-        this.$router.push('/');
-      }).catch((err: any) => {
-        this.isLoading = false;
-        console.log(err);
-      });
+      await this.$store
+        .dispatch("login", this.user)
+        .then(() => {
+          this.$router.push("/");
+        })
+        .catch((err: any) => {
+          this.isLoading = false;
+          console.log(err);
+        });
     },
   },
 });

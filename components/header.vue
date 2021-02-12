@@ -244,7 +244,11 @@
                 ><i class="mdi mdi-lock-open-outline"></i> Lock screen</a
               >
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item text-danger" id="logout-btn" href="#" @click.prevent="logout"
+              <a
+                class="dropdown-item text-danger"
+                id="logout-btn"
+                href="#"
+                @click.prevent="logout"
                 ><i class="mdi mdi-power text-danger"></i> Logout</a
               >
             </div>
@@ -265,28 +269,30 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
+import Vue from "vue";
 
 export default Vue.extend({
-  name: 'Header',
+  name: "Header",
 
   data() {
     return {
-      title: 'My Header File',
+      title: "My Header File",
       isLoggedOut: false as boolean,
     };
   },
 
-  computed: {
-  },
+  computed: {},
 
   methods: {
     async logout() {
-      this.$store.dispatch('logout').then(() => {
-        this.isLoggedOut = true;
-        this.$store.commit('LOGOUT');
-        this.$router.push('login');
-      }).catch();
+      this.$store
+        .dispatch("logout")
+        .then(() => {
+          this.isLoggedOut = true;
+          this.$store.commit("LOGOUT");
+          this.$router.push("login");
+        })
+        .catch();
     },
   },
 });
