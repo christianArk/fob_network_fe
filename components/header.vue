@@ -290,7 +290,7 @@ export default Vue.extend({
         .then(() => {
           this.isLoggedOut = true;
           this.$store.commit('LOGOUT');
-          this.$router.push('login');
+          this.$router.push('/login');
         })
         .catch();
     },

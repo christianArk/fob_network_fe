@@ -1,7 +1,7 @@
 <template>
   <div class="row align-items-center justify-content-center">
     <div class="col-lg-5">
-      <div class="card card-pages  shadow-lg mt-4">
+      <div class="card card-pages shadow-lg mt-4">
         <div class="card-body">
           <div class="text-center mt-0 mb-3">
             <nuxt-link to="/" class="logo logo-admin">
@@ -13,21 +13,49 @@
               />
             </nuxt-link>
             <p class="text-muted w-75 mx-auto mb-4 mt-4 info">
-              Enter your email address.
+              Reset your password .
             </p>
           </div>
 
           <form class="form-horizontal mt-4" autocomplete="off">
             <div class="form-group">
               <div class="col-12">
-                <label for="username">Email</label>
+                <label for="token">Token</label>
                 <input
-                  v-model="user.email"
+                  v-model="user.token"
                   class="form-control"
-                  type="email"
+                  type="text"
                   required=""
-                  id="email"
-                  placeholder="Email"
+                  id="token"
+                  placeholder="Token"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-12">
+                <label for="password">Enter New Password</label>
+                <input
+                  v-model="user.password"
+                  class="form-control"
+                  type="password"
+                  required=""
+                  id="password"
+                  placeholder="Enter New Password"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-12">
+                <label for="confirm_password">Confirm New Password</label>
+                <input
+                  v-model="user.password"
+                  class="form-control"
+                  type="password"
+                  required=""
+                  id="confirm_password"
+                  placeholder="Confirm New Password"
                 />
               </div>
             </div>
@@ -38,10 +66,10 @@
                   v-if="!isLoading"
                   class="btn btn-black btn-block waves-effect waves-light"
                   type="submit"
-                  @click.prevent="sendResetEmail()"
+                  @click.prevent="resetPassword()"
                   :disabled="!emailSet"
                 >
-                  Send Reset Email
+                  Reset Password
                 </button>
                 <button
                   v-if="isLoading"
@@ -79,7 +107,8 @@ export default Vue.extend({
     return {
       isLoading: false as boolean,
       user: {
-        email: '',
+        token: '',
+        password: '',
       },
     };
   },
@@ -90,12 +119,12 @@ export default Vue.extend({
   },
   mounted() {},
   methods: {
-    async sendResetEmail() {
+    async resetPassword() {
       this.isLoading = true;
       await this.$store
-        .dispatch('forgotPassword', this.user)
+        .dispatch('resetPassword', this.user)
         .then(() => {
-          this.$router.push('/reset-password');
+          this.$router.push('/');
         })
         .catch((err: any) => {
           this.isLoading = false;

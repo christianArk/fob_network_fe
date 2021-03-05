@@ -4,7 +4,7 @@
 
     <!-- Begin page -->
     <div class="home-btn d-none d-sm-block">
-      <nuxt-link to="/" class="text-white"
+      <nuxt-link to="/dashboard" class="text-black"
         ><i class="mdi mdi-home h1"></i
       ></nuxt-link>
     </div>
@@ -30,11 +30,19 @@ export default Vue.extend({
   updated() {},
 });
 </script>
-<style>
+<style scoped>
+.nuxt-link-active {
+  color: #000000 !important;
+}
+
+.text-black {
+  color: #000000 !important;
+}
 .nuxt-link-active {
   color: #ffffff !important;
 }
 .accountbg {
-  background: #eb9532 !important;
+  background: #ffffff !important;
+  /* background: #eb9532 !important; */
 }
 </style>

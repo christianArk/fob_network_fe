@@ -1,7 +1,7 @@
 <template>
   <div class="row align-items-center justify-content-center">
     <div class="col-lg-5">
-      <div class="card card-pages shadow-none mt-4">
+      <div class="card card-pages shadow-lg mt-4">
         <div class="card-body">
           <div class="text-center mt-0 mb-3">
             <nuxt-link to="/" class="logo logo-admin">
@@ -92,11 +92,11 @@
                     password?</nuxt-link
                   >
                 </div>
-                <!-- <div class="text-right">
+                <div class="text-right">
                   <nuxt-link to="/sign-up" class="text-muted">
                     Create an account</nuxt-link
                   >
-                </div> -->
+                </div>
               </div>
             </div>
           </form>
@@ -126,14 +126,16 @@ export default Vue.extend({
       return this.user.email !== '' && this.user.password !== '';
     },
   },
-  mounted() {},
+  mounted() {
+  },
   methods: {
     async login() {
       this.isLoading = true;
       await this.$store
         .dispatch('login', this.user)
         .then(() => {
-          this.$router.push('/');
+          // console.log('came here');
+          // this.$router.push('/');
         })
         .catch((err: any) => {
           this.isLoading = false;

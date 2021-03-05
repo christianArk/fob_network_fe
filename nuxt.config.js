@@ -33,7 +33,6 @@ export default {
       },
       {
         src: '/js/metismenu.min.js',
-        defer: true,
       },
       {
         src: '/js/jquery.slimscroll.js',
@@ -55,7 +54,7 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['@/plugins/axios', '@/plugins/persisted'],
+  plugins: ['@/plugins/axios', '@/plugins/persisted', '@/plugins/vuetable', '@/plugins/vuelidate', '@/plugins/vue-sweetalert'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -67,7 +66,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/axios'],
+  modules: ['@nuxtjs/axios', 'bootstrap-vue/nuxt'],
 
   axios: {
     baseURL: 'http://34.68.96.89/api/v2',
