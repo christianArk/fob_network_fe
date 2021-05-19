@@ -6,7 +6,7 @@
           <div class="text-center mt-0 mb-3">
             <nuxt-link to="/" class="logo logo-admin">
               <img
-                src="~/~/assets/images/logo.png"
+                src="~/~/assets/images/logo_main.png"
                 class="mt-3"
                 alt=""
                 height="26"

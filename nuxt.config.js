@@ -12,7 +12,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Mevron Admin Dashboard',
+    title: 'FOB Network Portal',
     htmlAttrs: {
       lang: 'en',
     },
@@ -63,13 +63,14 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
+    '@nuxtjs/moment',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ['@nuxtjs/axios', 'bootstrap-vue/nuxt'],
 
   axios: {
-    baseURL: 'http://34.68.96.89/api/v2',
+    baseURL: 'http://127.0.0.1:8000/api/', // 'http://34.68.96.89/api/v2',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

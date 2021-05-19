@@ -246,7 +246,7 @@
           <b-button v-else variant="primary" disabled>
             <i class="fas fa-circle-notch fa-spin"></i>
           </b-button>
-          <b-button type="reset" variant="danger">Reset</b-button>
+          <b-button type="reset" @click.prevent="resetForm()" variant="danger">Reset</b-button>
         </b-form>
       </div>
     </b-sidebar>
@@ -285,14 +285,19 @@
 import Vue from 'vue';
 import { validationMixin } from 'vuelidate';
 import { required, minLength, email } from 'vuelidate/lib/validators';
+import { USERS } from '../../utils/constants';
 
 export default Vue.extend({
   mixins: [validationMixin],
   mounted() {
+    this.getCountries();
   },
   data() {
     return {
       isLoading: false,
+      countries: [],
+      states: [],
+      cities: [],
       form: {
         firstName: '',
         lastName: '',
@@ -300,6 +305,13 @@ export default Vue.extend({
         phoneNumber: '',
         password: '',
         role: '',
+        userType: USERS.ADMIN,
+        country: '',
+        gender: '',
+        address: '',
+        city: '',
+        countryCode: '',
+        state: '',
       },
       foods: [],
       roles: [
@@ -404,6 +416,22 @@ export default Vue.extend({
     },
   },
   methods: {
+    resetForm() {
+      Object.keys(this.form).forEach((key) => {
+        this.form[key] = '';
+      });
+      this.$v.form.$reset();
+    },
+    async getCountries() {
+      await this.$store
+        .dispatch('getCountries')
+        .then((res) => {
+          this.countries = res.data.countries;
+        })
+        .catch(() => {
+          this.$swal('Error', 'An error occured while retreiving countries!', 'error');
+        });
+    },
     async submitForm() {
       this.$v.form.$touch();
       if (this.$v.form.$anyError) {

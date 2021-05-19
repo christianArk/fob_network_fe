@@ -6,7 +6,7 @@
           <div class="text-center mt-0 mb-3">
             <nuxt-link to="/" class="logo logo-admin">
               <img
-                src="~/~/assets/images/logo.png"
+                src="~/~/assets/images/logo_main.png"
                 class="mt-3"
                 alt=""
                 height="26"
@@ -18,6 +18,10 @@
           </div>
 
           <form class="form-horizontal mt-4" autocomplete="off">
+            <div v-if="loginError" class="col-12">
+            <div class="alert alert-danger">Invalid credentials!</div>
+            </div>
+
             <div class="form-group">
               <div class="col-12">
                 <label for="username">Email</label>
@@ -92,11 +96,11 @@
                     password?</nuxt-link
                   >
                 </div>
-                <div class="text-right">
+                <!-- <div class="text-right">
                   <nuxt-link to="/sign-up" class="text-muted">
                     Create an account</nuxt-link
                   >
-                </div>
+                </div> -->
               </div>
             </div>
           </form>
@@ -114,10 +118,11 @@ export default Vue.extend({
   layout: 'auth',
   data() {
     return {
+      loginError: false as boolean,
       isLoading: false as boolean,
       user: {
-        email: '',
-        password: '',
+        email: 'chris@gmail.com',
+        password: 'password',
       },
     };
   },
@@ -130,15 +135,17 @@ export default Vue.extend({
   },
   methods: {
     async login() {
+      this.loginError = false;
       this.isLoading = true;
       await this.$store
         .dispatch('login', this.user)
         .then(() => {
           // console.log('came here');
-          // this.$router.push('/');
+          this.$router.push('/');
         })
         .catch((err: any) => {
           this.isLoading = false;
+          this.loginError = true;
           console.log(err);
         });
     },

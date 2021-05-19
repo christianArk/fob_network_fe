@@ -13,7 +13,7 @@
 
       <Nuxt />
 
-      <footer class="footer">&copy; {{ year }} Mevron</footer>
+      <footer class="footer">&copy; {{ year }} FOB Portal</footer>
     </div>
     <!-- ============================================================== -->
     <!-- End Right content here -->

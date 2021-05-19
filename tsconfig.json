@@ -20,8 +20,9 @@
       "@types/node",
       "@nuxtjs/axios",
       "@nuxtjs/auth-next",
-      "vue-sweetalert2"
+      "vue-sweetalert2",
+      "@nuxtjs/moment"
     ]
   },
-  "exclude": ["node_modules", ".nuxt", "dist"]
+  "exclude": ["node_modules", ".nuxt", "dist", "pages", "plugins", "store"]
 }

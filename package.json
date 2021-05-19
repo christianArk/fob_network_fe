@@ -1,5 +1,5 @@
 {
-  "name": "mevron-dashboard",
+  "name": "fob-network-status-portal",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -15,6 +15,7 @@
     "@nuxt/typescript-runtime": "^2.0.1",
     "@nuxtjs/auth-next": "5.0.0-1611574754.9020f2a",
     "@nuxtjs/axios": "^5.13.0",
+    "@nuxtjs/moment": "^1.6.1",
     "axios": "^0.21.1",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.8.2",
