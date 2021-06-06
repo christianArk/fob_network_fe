@@ -110,12 +110,10 @@
                 label="Location"
                 label-for="location"
               >
-                <b-form-select
-                  id="role"
-                  v-model="form.location"
-                  multiple
-                  :options="locations"
-                ></b-form-select>
+                <multi-select :options="locations"
+                  :selected-options="items"
+                  @select="onSelect" placeholder = "Select one or more options">
+                </multi-select>
                 <b-form-invalid-feedback v-if="!$v.form.location.required">
                   Location is required
                 </b-form-invalid-feedback>
@@ -126,30 +124,13 @@
           <b-row>
             <b-col>
               <b-form-group
-                label="Status"
-                label-for="status"
-              >
-                <b-form-select
-                  id="role"
-                  v-model="form.status"
-                  :options="statuses"
-                ></b-form-select>
-                <b-form-invalid-feedback v-if="!$v.form.status.required">
-                  Status is required
-                </b-form-invalid-feedback>
-              </b-form-group>
-            </b-col>
-            <b-col>
-              <b-form-group
                 label="Services Affected"
                 label-for="services_affected"
               >
-                <b-form-select
-                  id="services_affected"
-                  multiple
-                  v-model="form.services_affected"
-                  :options="services"
-                ></b-form-select>
+                <multi-select :options="services"
+                  :selected-options="itemsAffected"
+                  @select="onSelectServices" placeholder = "Select one or more options">
+                </multi-select>
                 <b-form-invalid-feedback v-if="!$v.form.services_affected.required">
                   Services affected is required
                 </b-form-invalid-feedback>
@@ -190,6 +171,21 @@
           </b-row>
 
           <b-row>
+            <b-col>
+              <b-form-group
+                label="Status"
+                label-for="status"
+              >
+                <b-form-select
+                  id="role"
+                  v-model="form.status"
+                  :options="statuses"
+                ></b-form-select>
+                <b-form-invalid-feedback v-if="!$v.form.status.required">
+                  Status is required
+                </b-form-invalid-feedback>
+              </b-form-group>
+            </b-col>
             <b-col>
                 <b-form-group
                   label="Time Of Recovery"
@@ -237,12 +233,10 @@
                 label="Location"
                 label-for="location"
               >
-                <b-form-select
-                  id="role"
-                  v-model="editForm.location"
-                  multiple
-                  :options="locations"
-                ></b-form-select>
+                <multi-select :options="locations"
+                  :selected-options="items"
+                  @select="onSelect" placeholder = "Select one or more options">
+                </multi-select>
                 <b-form-invalid-feedback v-if="!$v.editForm.location.required">
                   Location is required
                 </b-form-invalid-feedback>
@@ -253,30 +247,13 @@
           <b-row>
             <b-col>
               <b-form-group
-                label="Status"
-                label-for="status"
-              >
-                <b-form-select
-                  id="role"
-                  v-model="editForm.status"
-                  :options="statuses"
-                ></b-form-select>
-                <b-form-invalid-feedback v-if="!$v.editForm.status.required">
-                  Status is required
-                </b-form-invalid-feedback>
-              </b-form-group>
-            </b-col>
-            <b-col>
-              <b-form-group
                 label="Services Affected"
                 label-for="services_affected"
               >
-                <b-form-select
-                  id="services_affected"
-                  multiple
-                  v-model="editForm.services"
-                  :options="services"
-                ></b-form-select>
+                <multi-select :options="services"
+                  :selected-options="itemsAffected"
+                  @select="onSelectServices" placeholder = "Select one or more options">
+                </multi-select>
                 <b-form-invalid-feedback v-if="!$v.editForm.services_affected.required">
                   Services affected is required
                 </b-form-invalid-feedback>
@@ -318,6 +295,21 @@
 
           <b-row>
             <b-col>
+              <b-form-group
+                label="Status"
+                label-for="status"
+              >
+                <b-form-select
+                  id="role"
+                  v-model="editForm.status"
+                  :options="statuses"
+                ></b-form-select>
+                <b-form-invalid-feedback v-if="!$v.editForm.status.required">
+                  Status is required
+                </b-form-invalid-feedback>
+              </b-form-group>
+            </b-col>
+            <b-col>
                 <b-form-group
                   label="Time Of Recovery"
                   label-for="time_of_recovery"
@@ -352,15 +344,21 @@ import {
 
 import DatePicker from 'vue2-datepicker';
 import 'vue2-datepicker/index.css';
+import 'vue-search-select/dist/VueSearchSelect.css';
+import { MultiSelect } from 'vue-search-select';
 
 export default Vue.extend({
   mixins: [validationMixin],
-  components: { DatePicker },
+  components: { DatePicker, MultiSelect },
   mounted() {
     this.getLogs();
   },
   data() {
     return {
+      items: [],
+      lastSelectItem: {},
+      itemsAffected: [],
+      lastSelectItemAffected: {},
       showAddLog: false,
       showEditForm: false,
       tableLoading: false,
@@ -373,7 +371,7 @@ export default Vue.extend({
         location: '',
         time_of_downtime: '',
         recovery_time: '',
-        services: null,
+        services_affected: [],
         status: '',
         time_of_recovery: '',
       },
@@ -383,7 +381,7 @@ export default Vue.extend({
         location: '',
         time_of_downtime: '',
         recovery_time: '',
-        services: null,
+        services_affected: [],
         status: '',
         time_of_recovery: '',
       },
@@ -393,7 +391,6 @@ export default Vue.extend({
         { value: '2', text: 'Lagos Mainland' },
       ],
       locations: [
-        { value: '', text: 'Please select an option' },
         { value: '1', text: 'Agungi' },
         { value: '2', text: 'Obalende' },
         { value: '3', text: 'Gbagada' },
@@ -406,7 +403,6 @@ export default Vue.extend({
         { value: 'Resolved', text: 'Resolved' },
       ],
       services: [
-        { value: '', text: 'Please select an option' },
         { value: 'MPLS', text: 'MPLS' },
         { value: 'Internet', text: 'Internet' },
         { value: 'VPN', text: 'VPN' },
@@ -432,6 +428,11 @@ export default Vue.extend({
         {
           label: 'Services Affected',
           field: 'services_affected',
+          width: '20%',
+        },
+        {
+          label: 'Status',
+          field: 'status',
         },
         {
           label: 'Time Of Downtime',
@@ -445,10 +446,6 @@ export default Vue.extend({
         {
           label: 'Timed Recovered',
           field: 'time_recovered',
-        },
-        {
-          label: 'Status',
-          field: 'status',
         },
         {
           label: 'Posted By',
@@ -510,6 +507,16 @@ export default Vue.extend({
   computed: {
   },
   methods: {
+    onSelect(items, lastSelectItem) {
+      this.items = items;
+      this.form.location = this.items;
+      this.lastSelectItem = lastSelectItem;
+    },
+    onSelectServices(items, lastSelectItem) {
+      this.itemsAffected = items;
+      this.form.services_affected = this.itemsAffected;
+      this.lastSelectItemAffected = lastSelectItem;
+    },
     resetForm() {
       Object.keys(this.form).forEach((key) => {
         this.form[key] = '';
@@ -527,6 +534,9 @@ export default Vue.extend({
           this.editForm = res.data;
           this.editForm.location = res.data.location.split(',');
           this.editForm.services = res.data.services_affected.split(',');
+          this.items = this.locations.filter((x) => this.editForm.location.includes(x.value));
+          this.itemsAffected = this.services
+            .filter((x) => this.editForm.services.includes(x.value));
           this.editForm.time_of_downtime = new Date(res.data.time_of_downtime);
           this.editForm.recovery_time = new Date(res.data.expected_time_of_recovery);
           this.editForm.time_of_recovery = new Date(res.data.time_recovered);
@@ -570,6 +580,14 @@ export default Vue.extend({
         return;
       }
       this.isLoading = true;
+      this.form.location = [];
+      this.form.services_affected = [];
+      this.items.forEach((el) => {
+        this.form.location.push(el.value);
+      });
+      this.itemsAffected.forEach((el) => {
+        this.form.services_affected.push(el.value);
+      });
       await this.$store
         .dispatch('createNetworkLog', this.form)
         .then(() => {
@@ -579,6 +597,7 @@ export default Vue.extend({
           });
           this.$v.form.$reset(); // = false;
           this.showAddLog = false;
+          this.items = [];
           app.getLogs();
           this.$swal('Success', 'Network entry was successfully added!', 'success');
         })
@@ -599,6 +618,13 @@ export default Vue.extend({
       delete this.editForm.updated_at;
       delete this.editForm.expected_time_of_recovery;
       delete this.editForm.user_id;
+
+      this.items.forEach((el) => {
+        this.editForm.location.push(el.value);
+      });
+      this.itemsAffected.forEach((el) => {
+        this.editForm.services.push(el.value);
+      });
       await this.$store
         .dispatch('updateLog', { id: this.editForm.id, payload: this.editForm })
         .then(() => {
