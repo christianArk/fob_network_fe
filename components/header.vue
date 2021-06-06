@@ -105,6 +105,8 @@ export default Vue.extend({
         .dispatch('logout')
         .then(() => {
           this.isLoggedOut = true;
+          // @ts-ignore
+          this.$laravel.setPermissions([]);
           this.$store.commit('LOGOUT');
           this.$router.push('/login');
         })

@@ -2,13 +2,13 @@ export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
-  typescript: {
-    typeCheck: {
-      eslint: {
-        files: './**/*.{ts,js,vue}',
-      },
-    },
-  },
+  // typescript: {
+  //   typeCheck: {
+  //     eslint: {
+  //       files: './**/*.{ts,js,vue}',
+  //     },
+  //   },
+  // },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -54,7 +54,8 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['@/plugins/axios', '@/plugins/persisted', '@/plugins/vuetable', '@/plugins/vuelidate', '@/plugins/vue-sweetalert'],
+  plugins: ['@/plugins/axios', '@/plugins/persisted', '@/plugins/vuetable',
+    '@/plugins/vuelidate', '@/plugins/vue-sweetalert', '@/plugins/laravel-permissions'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -70,7 +71,7 @@ export default {
   modules: ['@nuxtjs/axios', 'bootstrap-vue/nuxt'],
 
   axios: {
-    baseURL: 'http://127.0.0.1:8000/api/', // 'http://34.68.96.89/api/v2',
+    baseURL: 'http://127.0.0.1:8000/api/', // 'http://networkstatusapi.fob.com.ng/api/',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

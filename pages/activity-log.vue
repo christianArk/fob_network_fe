@@ -22,7 +22,10 @@
       </div>
 
       <div class="row">
-        <div class="col-12">
+        <div class="col-12" v-if="!this.$laravel.hasPermission('Can View Activity Logs')">
+          <div class="alert alert-danger">You are not authorized to view this information</div>
+        </div>
+        <div v-else class="col-12">
           <div class="card">
             <div class="card-body">
 

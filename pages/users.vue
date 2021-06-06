@@ -13,7 +13,8 @@
           </div>
           <div class="col-md-4">
             <div class="float-right">
-              <b-button variant="primary" class="waves-effect waves-light" v-b-toggle.new-user>
+              <b-button v-permission="'Can Create Users'"
+              variant="primary" class="waves-effect waves-light" v-b-toggle.new-user>
                 <i class="dripicons-plus"></i> New User
               </b-button>
             </div>
@@ -22,7 +23,10 @@
       </div>
 
       <div class="row">
-        <div class="col-12">
+        <div class="col-12" v-if="!this.$laravel.hasPermission('Can View Users')">
+          <div class="alert alert-danger">You are not authorized to view this information</div>
+        </div>
+        <div  v-else class="col-12">
           <div class="card">
             <div class="card-body">
 
@@ -51,7 +55,7 @@
                   <div class="dropdown-menu" x-placement="bottom-start"
                   style="position: absolute; transform: translate3d(0px, 35px, 0px); top: 0px;
                    left: 0px; will-change: transform;">
-                      <a class="dropdown-item" href="#"
+                      <a class="dropdown-item" v-permission="'Can Update Users'" href="#"
                       @click.prevent="editUser(props.row.id)">Edit</a>
                       <!-- <div class="dropdown-divider"></div> -->
                       <!-- <a class="dropdown-item" href="#"
@@ -611,7 +615,7 @@ export default Vue.extend({
       }
       this.isLoading = true;
       await this.$store
-        .dispatch('updateUser', {id: this.editForm.id, payload: this.editForm})
+        .dispatch('updateUser', { id: this.editForm.id, payload: this.editForm })
         .then(() => {
           this.isLoading = false;
           Object.keys(this.editForm).forEach((key) => {

@@ -13,7 +13,9 @@
           </div>
           <div class="col-md-4">
             <div class="float-right">
-              <b-button variant="primary" class="waves-effect waves-light" v-b-toggle.new-role>
+              <b-button variant="primary"
+              v-permission="'Can Manage Roles'"
+              class="waves-effect waves-light" v-b-toggle.new-role>
                 <i class="dripicons-plus"></i> New Role
               </b-button>
             </div>
@@ -22,7 +24,10 @@
       </div>
 
       <div class="row">
-        <div class="col-12">
+        <div class="col-12" v-if="!this.$laravel.hasPermission('Can Manage Roles')">
+          <div class="alert alert-danger">You are not authorized to view this information</div>
+        </div>
+        <div v-else class="col-12">
           <div class="card">
             <div class="card-body">
 
@@ -345,6 +350,7 @@ export default Vue.extend({
         .dispatch('updateRole', { id: this.role.id, payload: this.form })
         .then(() => {
           this.isLoading = false;
+          this.showEditForm = false;
           Object.keys(this.form).forEach((key) => {
             this.form[key] = '';
           });

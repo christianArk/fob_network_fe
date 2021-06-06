@@ -42,6 +42,56 @@ export const actions = {
         .catch((error) => { reject(error); });
     });
   },
+  getLogs() {
+    return new Promise((resolve, reject) => {
+      this.$axios
+        .get('network')
+        .then((res) => {
+          resolve(res);
+        })
+        .catch((error) => { reject(error); });
+    });
+  },
+  getLog(context, id) {
+    return new Promise((resolve, reject) => {
+      this.$axios
+        .get(`network/${id}`)
+        .then((res) => {
+          resolve(res);
+        })
+        .catch((error) => { reject(error); });
+    });
+  },
+  updateLog(context, { id, payload }) {
+    return new Promise((resolve, reject) => {
+      this.$axios
+        .post(`network/${id}`, payload)
+        .then((res) => {
+          resolve(res);
+        })
+        .catch((error) => { reject(error); });
+    });
+  },
+  createNetworkLog(context, payload) {
+    return new Promise((resolve, reject) => {
+      this.$axios
+        .post('network', payload)
+        .then((res) => {
+          resolve(res);
+        })
+        .catch((error) => { reject(error); });
+    });
+  },
+  deleteLog(context, payload) {
+    return new Promise((resolve, reject) => {
+      this.$axios
+        .delete(`network/${payload}`)
+        .then((res) => {
+          resolve(res);
+        })
+        .catch((error) => { reject(error); });
+    });
+  },
   getRole(context, id) {
     return new Promise((resolve, reject) => {
       this.$axios

@@ -50,7 +50,7 @@
               </div>
             </div>
 
-            <div class="form-group">
+            <!-- <div class="form-group">
               <div class="col-12">
                 <div class="checkbox checkbox-primary">
                   <div class="custom-control custom-checkbox">
@@ -65,7 +65,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
 
             <div class="form-group text-center mt-3">
               <div class="col-12">
@@ -139,8 +139,9 @@ export default Vue.extend({
       this.isLoading = true;
       await this.$store
         .dispatch('login', this.user)
-        .then(() => {
-          // console.log('came here');
+        .then((res) => {
+          // @ts-ignore
+          this.$laravel.setPermissions(res.data.permission_names);
           this.$router.push('/');
         })
         .catch((err: any) => {
